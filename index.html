@@ -517,6 +517,21 @@
   }
   tickClock();
   setInterval(tickClock, 1000);
+  
+fetch('data/headlines.json')
+  .then(r => r.json())
+  .then(data => {
+    const items = data.articles || [];
+    const list = document.querySelector('.side-card .headline-item')?.parentElement;
+    if (!list || items.length === 0) return;
+    const html = items.slice(0, 8).map(a => `
+      <div class="headline-item">${a.title}
+        <span class="meta">${a.source?.name || ''} · ${new Date(a.publishedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span>
+      </div>`).join('');
+    list.innerHTML = '<h3>Live headlines</h3>' + html;
+  })
+  .catch(() => {});
+  
 
   function refreshDesk(){
     const overlay = document.getElementById('loadingOverlay');
