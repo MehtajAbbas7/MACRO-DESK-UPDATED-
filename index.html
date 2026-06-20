@@ -521,7 +521,10 @@
 fetch('data/headlines.json')
   .then(r => r.json())
   .then(data => {
-    const items = data.articles || [];
+    const keywords = ['fed','rate','inflation','cpi','dollar','gold','ftse','dax','s&p','central bank','ecb','boe','treasury','yield','recession','gdp','geopolit','opec','oil price'];
+const items = (data.articles || []).filter(a =>
+  keywords.some(k => (a.title || '').toLowerCase().includes(k))
+);
     const list = document.querySelector('.side-card .headline-item')?.parentElement;
     if (!list || items.length === 0) return;
     const html = items.slice(0, 8).map(a => `
