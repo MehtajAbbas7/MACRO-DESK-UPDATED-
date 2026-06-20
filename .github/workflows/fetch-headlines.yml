@@ -1,0 +1,31 @@
+name: Fetch macro headlines
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch headlines
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+        run: mkdir -p data && curl -s "https://newsapi.org/v2/everything?q=Federal+Reserve+OR+inflation+OR+dollar+index+OR+gold+OR+FTSE+OR+central+bank&domains=reuters.com,bloomberg.com,cnbc.com,ft.com,wsj.com&language=en&sortBy=publishedAt&pageSize=20&apiKey=$NEWSAPI_KEY" -o data/headlines.json
+
+      - name: Fetch calendar
+        run: curl -s "https://api.tradingeconomics.com/calendar/country/united%20states,united%20kingdom,euro%20area?c=guest:guest&f=json" -o data/calendar.json
+
+      - name: Commit data
+        run: |
+          git config user.name "macro-desk-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/headlines.json data/calendar.json
+          git diff --staged --quiet || git commit -m "Auto-update headlines"
+          git push
