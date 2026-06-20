@@ -17,7 +17,7 @@ jobs:
       - name: Fetch headlines
         env:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
-        run: mkdir -p data && curl -s "https://newsapi.org/v2/everything?q=Federal+Reserve+OR+inflation+OR+dollar+index+OR+gold+OR+FTSE+OR+central+bank&domains=reuters.com,bloomberg.com,cnbc.com,ft.com,wsj.com&language=en&sortBy=publishedAt&pageSize=20&apiKey=$NEWSAPI_KEY" -o data/headlines.json
+        run: mkdir -p data && curl -s "https://newsapi.org/v2/everything?q=Federal+Reserve+OR+inflation+OR+dollar+index+OR+gold+OR+FTSE+OR+central+bank+OR+Trump+OR+Iran+OR+ceasefire+OR+Hormuz+OR+Powell+OR+Warsh+OR+ECB+OR+Lagarde+OR+Bank+of+England+OR+Bailey+OR+White+House+OR+rate+decision&domains=reuters.com,bloomberg.com,cnbc.com,ft.com,wsj.com&language=en&sortBy=publishedAt&pageSize=40&apiKey=$NEWSAPI_KEY" -o data/headlines.json
 
       - name: Fetch calendar
         run: curl -s "https://api.tradingeconomics.com/calendar/country/united%20states,united%20kingdom,euro%20area?c=guest:guest&f=json" -o data/calendar.json
