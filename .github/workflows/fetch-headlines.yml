@@ -2,11 +2,10 @@ name: Fetch macro headlines
 
 on:
   schedule:
-    # Runs every 3 hours, free on GitHub Actions for public repos
     - cron: '0 */3 * * *'
   workflow_dispatch: {}
 
-  permissions:
+permissions:
   contents: write
 
 jobs:
