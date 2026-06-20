@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Macro Desk — USD / Indices / Gold</title>
+<style>
+  :root{
+    --ink:#1a1a1a;
+    --ink-soft:#4a4a48;
+    --ink-faint:#85827a;
+    --paper:#f7f5ef;
+    --paper-raised:#ffffff;
+    --rule:#1a1a1a;
+    --rule-soft:#d8d4c8;
+    --red:#9e2b25;
+    --green:#2f5d3a;
+    --amber:#8a5a12;
+    --accent:#1c3d5a;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", "Courier New", monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+
+  /* ===== Masthead ===== */
+  .masthead{
+    border-bottom:3px solid var(--rule);
+    padding:18px 28px 14px;
+    max-width:1180px; margin:0 auto;
+  }
+  .masthead-top{
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.06em;
+    color:var(--ink-faint); text-transform:uppercase;
+    border-bottom:1px solid var(--rule-soft); padding-bottom:10px; margin-bottom:14px;
+  }
+  .masthead-top span#liveclock{font-weight:600; color:var(--ink-soft);}
+  .masthead-main{display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:10px;}
+  .brand{
+    font-family:var(--serif); font-weight:600; font-size:44px; letter-spacing:-0.01em;
+    line-height:1;
+  }
+  .brand em{font-style:italic; color:var(--red);}
+  .tagline{
+    font-family:var(--sans); font-size:12.5px; color:var(--ink-soft);
+    text-transform:uppercase; letter-spacing:0.08em; margin-top:4px;
+  }
+  .refresh-btn{
+    font-family:var(--sans); font-size:13px; font-weight:600;
+    background:var(--ink); color:var(--paper); border:none;
+    padding:10px 18px; border-radius:2px; cursor:pointer;
+    display:flex; align-items:center; gap:8px;
+    transition:background 0.15s;
+  }
+  .refresh-btn:hover{background:var(--accent);}
+  .refresh-btn:disabled{opacity:0.55; cursor:default;}
+  .refresh-note{font-size:11px; color:var(--ink-faint); margin-top:6px; max-width:220px; text-align:right;}
+
+  /* ===== Ticker strip ===== */
+  .ticker-strip{
+    background:var(--ink); color:var(--paper);
+    font-family:var(--mono); font-size:12.5px;
+    padding:9px 0; overflow:hidden; white-space:nowrap; position:relative;
+  }
+  .ticker-track{display:inline-block; padding-left:100%; animation:scroll 38s linear infinite;}
+  .ticker-strip:hover .ticker-track{animation-play-state:paused;}
+  @keyframes scroll{ from{transform:translateX(0);} to{transform:translateX(-100%);} }
+  .ticker-track span{margin-right:46px;}
+  .tk-up{color:#8fd19e;} .tk-down{color:#e89b96;}
+
+  /* ===== Layout ===== */
+  .wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+  .section-label{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--ink-faint); border-bottom:1px solid var(--rule-soft);
+    padding-bottom:6px; margin:38px 0 16px; display:flex; justify-content:space-between; align-items:center;
+  }
+  .section-label .ts{font-weight:400; color:var(--ink-faint);}
+
+  /* ===== Bias bar ===== */
+  .bias-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+    border:1px solid var(--rule); margin-top:18px;
+  }
+  .bias-cell{
+    padding:18px 16px; border-right:1px solid var(--rule-soft);
+    background:var(--paper-raised);
+  }
+  .bias-cell:last-child{border-right:none;}
+  .bias-asset{font-family:var(--mono); font-size:12px; color:var(--ink-faint); letter-spacing:0.05em;}
+  .bias-dir{
+    font-family:var(--serif); font-size:22px; font-weight:600; margin:6px 0 4px;
+  }
+  .bias-dir.bull{color:var(--green);} .bias-dir.bear{color:var(--red);} .bias-dir.neutral{color:var(--amber);}
+  .bias-sub{font-size:12.5px; color:var(--ink-soft); line-height:1.45;}
+
+  /* ===== Lead grid ===== */
+  .lead-grid{display:grid; grid-template-columns:1.6fr 1fr; gap:36px; margin-top:6px;}
+  .lead-story h2{
+    font-family:var(--serif); font-size:30px; line-height:1.18; font-weight:600;
+    margin:0 0 12px;
+  }
+  .lead-kicker{
+    font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--red); margin-bottom:8px; display:block;
+  }
+  .lead-story p{font-family:var(--serif); font-size:16.5px; line-height:1.65; color:#2b2b29; margin:0 0 14px;}
+  .lead-story .byline{font-family:var(--sans); font-size:12px; color:var(--ink-faint); margin-bottom:16px;}
+  .pullquote{
+    border-left:3px solid var(--ink); padding-left:16px; margin:20px 0;
+    font-family:var(--serif); font-style:italic; font-size:17px; color:var(--ink-soft);
+  }
+  .sidebar-stack{display:flex; flex-direction:column; gap:16px;}
+  .side-card{
+    background:var(--paper-raised); border:1px solid var(--rule-soft); padding:16px 18px;
+  }
+  .side-card h3{
+    font-family:var(--sans); font-size:12px; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--ink-faint); margin:0 0 10px; border-bottom:1px solid var(--rule-soft); padding-bottom:8px;
+  }
+  .side-card .headline-item{padding:9px 0; border-bottom:1px solid var(--rule-soft); font-size:13.5px; line-height:1.4;}
+  .side-card .headline-item:last-child{border-bottom:none;}
+  .side-card .headline-item a{text-decoration:none; font-weight:500;}
+  .side-card .headline-item .meta{display:block; font-family:var(--mono); font-size:10.5px; color:var(--ink-faint); margin-top:3px;}
+
+  /* ===== Drivers grid ===== */
+  .drivers-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:0;
+    border-top:1px solid var(--rule); border-left:1px solid var(--rule);
+    margin-top:10px;
+  }
+  .driver-card{
+    border-right:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    padding:22px 24px; background:var(--paper-raised);
+  }
+  .driver-head{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;}
+  .driver-head h3{font-family:var(--serif); font-size:19px; font-weight:600; margin:0;}
+  .driver-tag{
+    font-family:var(--mono); font-size:10.5px; padding:3px 8px; border-radius:2px;
+    text-transform:uppercase; letter-spacing:0.04em; white-space:nowrap;
+  }
+  .tag-bull{background:#e6efe7; color:var(--green);}
+  .tag-bear{background:#f3e3e1; color:var(--red);}
+  .tag-mixed{background:#f1e8d7; color:var(--amber);}
+  .driver-card p{font-size:14px; line-height:1.65; color:var(--ink-soft); margin:0 0 10px;}
+  .driver-card p:last-child{margin-bottom:0;}
+  .driver-card .why{
+    font-size:12.5px; color:var(--ink-faint); background:var(--paper); padding:10px 12px;
+    border-left:2px solid var(--accent); margin-top:10px; line-height:1.55;
+  }
+  .why b{color:var(--ink-soft); font-weight:600;}
+
+  /* ===== Explainer / glossary ===== */
+  .explain-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:10px;}
+  .explain-card{
+    background:var(--paper-raised); border:1px solid var(--rule-soft); padding:16px 18px;
+    cursor:pointer; transition:border-color 0.15s;
+  }
+  .explain-card:hover{border-color:var(--ink);}
+  .explain-card h4{
+    font-family:var(--sans); font-size:14px; font-weight:600; margin:0 0 8px;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .explain-card h4 .arrow{font-size:13px; color:var(--ink-faint); transition:transform 0.2s;}
+  .explain-card.open h4 .arrow{transform:rotate(90deg);}
+  .explain-body{
+    font-size:13px; line-height:1.6; color:var(--ink-soft); max-height:0; overflow:hidden;
+    transition:max-height 0.25s ease;
+  }
+  .explain-card.open .explain-body{max-height:400px; margin-top:4px;}
+
+  /* ===== Calendar ===== */
+  .calendar-table{width:100%; border-collapse:collapse; margin-top:10px; font-size:13.5px;}
+  .calendar-table th{
+    text-align:left; font-family:var(--mono); font-size:10.5px; text-transform:uppercase;
+    letter-spacing:0.05em; color:var(--ink-faint); padding:8px 10px; border-bottom:1px solid var(--rule);
+  }
+  .calendar-table td{padding:11px 10px; border-bottom:1px solid var(--rule-soft); vertical-align:top;}
+  .calendar-table tr:last-child td{border-bottom:none;}
+  .impact-dot{display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px;}
+  .impact-high{background:var(--red);} .impact-med{background:var(--amber);} .impact-low{background:var(--ink-faint);}
+
+  /* ===== Sources footer ===== */
+  .sources-bar{
+    border-top:1px solid var(--rule-soft); margin-top:50px; padding:22px 0 40px;
+    font-size:12px; color:var(--ink-faint); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+  }
+  .sources-bar .src-list span{margin-right:14px;}
+
+  /* ===== Ask box ===== */
+  .ask-box{
+    background:var(--ink); color:var(--paper); padding:26px 28px; margin-top:40px;
+    display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;
+  }
+  .ask-box .ask-text h3{font-family:var(--serif); font-size:19px; margin:0 0 4px; font-weight:600;}
+  .ask-box .ask-text p{font-size:13px; color:#cfcdc4; margin:0;}
+  .ask-buttons{display:flex; gap:8px; flex-wrap:wrap;}
+  .ask-chip{
+    font-family:var(--sans); font-size:12.5px; background:transparent; color:var(--paper);
+    border:1px solid #56544c; padding:8px 14px; border-radius:20px; cursor:pointer; white-space:nowrap;
+  }
+  .ask-chip:hover{background:#2b2b29;}
+
+  .loading-overlay{
+    position:absolute; inset:0; background:rgba(247,245,239,0.92); display:none;
+    align-items:center; justify-content:center; flex-direction:column; gap:10px; z-index:50;
+    font-family:var(--mono); font-size:13px; color:var(--ink-soft);
+  }
+  .loading-overlay.active{display:flex;}
+  .spinner{width:22px; height:22px; border:2px solid var(--rule-soft); border-top-color:var(--ink); border-radius:50%; animation:spin 0.8s linear infinite;}
+  @keyframes spin{ to{transform:rotate(360deg);} }
+
+  @media (max-width:880px){
+    .lead-grid, .drivers-grid, .explain-grid, .bias-grid{grid-template-columns:1fr;}
+    .driver-card, .bias-cell{border-right:none;}
+    .brand{font-size:32px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="masthead-top">
+    <span>London desk · USD / G10 / Indices / Gold</span>
+    <span id="liveclock">—</span>
+  </div>
+  <div class="masthead-main">
+    <div>
+      <div class="brand">Macro<em>Desk</em></div>
+      <div class="tagline">Fundamentals, explained — not just reported</div>
+    </div>
+    <div style="text-align:right;">
+      <button class="refresh-btn" id="refreshBtn" onclick="refreshDesk()">
+        <span id="refreshIcon">↻</span> <span id="refreshLabel">Refresh briefing</span>
+      </button>
+      <div class="refresh-note">Pulls a fresh read by asking Claude to search live sources. Last built: <span id="lastBuilt">20 Jun 2026, 09:00 BST</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>DXY <span class="tk-up">100.82 ▲0.4%</span></span>
+    <span>EUR/USD <span class="tk-down">1.0865 ▼0.3%</span></span>
+    <span>GBP/USD <span class="tk-down">1.3430 ▼0.2%</span></span>
+    <span>USD/JPY <span class="tk-up">156.20 ▲0.5%</span></span>
+    <span>XAU/USD <span class="tk-down">4,165 ▼0.6%</span></span>
+    <span>FTSE 100 <span class="tk-up">9,742 ▲0.3%</span></span>
+    <span>DAX <span class="tk-up">19,860 ▲0.3%</span></span>
+    <span>S&amp;P 500 <span class="tk-up">6,890 ▲0.4%</span></span>
+    <span>WTI Crude <span class="tk-up">78.40 ▲1.2%</span></span>
+    <span>US 10Y <span class="tk-up">4.58% ▲3bp</span></span>
+    <span>DXY <span class="tk-up">100.82 ▲0.4%</span></span>
+    <span>EUR/USD <span class="tk-down">1.0865 ▼0.3%</span></span>
+    <span>GBP/USD <span class="tk-down">1.3430 ▼0.2%</span></span>
+    <span>USD/JPY <span class="tk-up">156.20 ▲0.5%</span></span>
+    <span>XAU/USD <span class="tk-down">4,165 ▼0.6%</span></span>
+    <span>FTSE 100 <span class="tk-up">9,742 ▲0.3%</span></span>
+  </div>
+</div>
+
+<div class="wrap" style="position:relative;">
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+    <div>Paste this briefing back to Claude and ask "refresh the macro desk" for a live update</div>
+  </div>
+
+  <!-- BIAS SNAPSHOT -->
+  <div class="section-label"><span>Today's bias snapshot</span><span class="ts">As of 19–20 Jun 2026</span></div>
+  <div class="bias-grid">
+    <div class="bias-cell">
+      <div class="bias-asset">USD (DXY)</div>
+      <div class="bias-dir bull">Firm / bullish</div>
+      <div class="bias-sub">Sticky inflation + hawkish Fed dot plot keeps the dollar supported. Risk: any dovish surprise from Warsh unwinds this fast.</div>
+    </div>
+    <div class="bias-cell">
+      <div class="bias-asset">Gold (XAU/USD)</div>
+      <div class="bias-dir bear">Pressured</div>
+      <div class="bias-sub">Caught between war-driven inflation (bearish, keeps Fed hawkish) and war-driven safe-haven flow (bullish). Net: heavy below $4,300.</div>
+    </div>
+    <div class="bias-cell">
+      <div class="bias-asset">FTSE 100</div>
+      <div class="bias-dir bull">Constructive</div>
+      <div class="bias-sub">Earnings recovery story intact, energy/industrials well bid. Vulnerable to broad risk-off spillover from US rate repricing.</div>
+    </div>
+    <div class="bias-cell">
+      <div class="bias-asset">S&amp;P 500 / DAX</div>
+      <div class="bias-dir neutral">Two-speed</div>
+      <div class="bias-sub">AI capex strength offsetting a cautious consumer. Holding near highs but sensitive to every Fed/jobs print.</div>
+    </div>
+  </div>
+
+  <!-- LEAD -->
+  <div class="section-label"><span>Lead story</span><span class="ts">Updated 17–19 Jun 2026</span></div>
+  <div class="lead-grid">
+    <div class="lead-story">
+      <span class="lead-kicker">Federal Reserve · Rates</span>
+      <h2>Warsh's first FOMC turns hawkish as inflation reaccelerates to 4.2%</h2>
+      <div class="byline">Macro Desk Briefing · Sourced from Reuters, Bloomberg, BLS, CME FedWatch</div>
+      <p>New Fed Chair Kevin Warsh's debut meeting on 16–17 June delivered a hold, as expected — but the surrounding signals were the real story. May's CPI print came in at 4.2% year-on-year, the highest reading since 2023, driven heavily by a surge in energy prices tied to the Iran conflict. Core CPI held steadier at 2.9%, but the headline number was enough to push half the FOMC's dot plot toward projecting a hike rather than a cut before year-end.</p>
+      <p>That's a sharp reversal from the consensus going into 2026, when most major banks — Goldman, JPMorgan, MUFG among them — were positioned for a weaker dollar on the assumption the Fed would keep cutting. Those calls were conditional on disinflation continuing. It hasn't. Warsh has so far declined to commit to a forward path, but his repeated emphasis on "price stability" in the press conference read as hawkish to a market that had been pricing dovishness.</p>
+      <div class="pullquote">"Every bearish-dollar bank target on the street this year rested on the same assumption: that the Fed cuts. With inflation at 4.2%, that assumption is the thing that broke."</div>
+      <p>The knock-on effects are showing up everywhere you'd expect. The dollar index is holding near one-year highs around 100.8. Gold has lost its safe-haven bid to rate-driven selling, dropping roughly 25% from January's all-time high of $5,589 even as the Iran conflict persists — a genuinely unusual setup, since the same war that should support gold is also the inflation source keeping the Fed restrictive. And US equities have shrugged it off almost entirely, with the S&amp;P riding strong May jobs data and AI capex enthusiasm to within range of fresh highs.</p>
+    </div>
+    <div class="sidebar-stack">
+      <div class="side-card">
+        <h3>Also moving markets</h3>
+        <div class="headline-item">US-Iran ceasefire draft still unsigned — diplomats revising terms over recent weeks
+          <span class="meta">Geopolitical · Reuters</span></div>
+        <div class="headline-item">May NFP prints 172k vs ~85k expected, lifting Fed hike odds sharply
+          <span class="meta">Labour market · Reuters, 6 Jun</span></div>
+        <div class="headline-item">Bank of England holds at 3.75% (8–1 vote); next decision 18 June
+          <span class="meta">BoE · GBP</span></div>
+        <div class="headline-item">Central banks add net 244t gold in Q1, signal structural demand intact
+          <span class="meta">World Gold Council</span></div>
+        <div class="headline-item">UBS, HSBC, Barclays raise 2026 S&amp;P targets on AI capex breadth
+          <span class="meta">Equities · Wall Street research</span></div>
+      </div>
+      <div class="side-card">
+        <h3>Positioning check</h3>
+        <div class="headline-item">CME FedWatch: ~97% odds of a hold in June, ~70% odds of at least one hike priced by December
+          <span class="meta">CME, 9 Jun</span></div>
+        <div class="headline-item">Goldman has stripped all remaining 2026 cuts from its base case, but holds its $5,400 gold target
+          <span class="meta">Goldman Sachs research</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DRIVERS -->
+  <div class="section-label"><span>The four forces driving sentiment right now</span><span class="ts">Ranked by current weight</span></div>
+  <div class="drivers-grid">
+    <div class="driver-card">
+      <div class="driver-head"><h3>Fed policy path</h3><span class="driver-tag tag-bull">USD bullish</span></div>
+      <p>This is the dominant driver of everything else on this page. A new, untested Fed chair, a committee split roughly down the middle on hiking, and inflation running well above target together remove the one variable (rate cuts) that every dollar-bearish forecast depended on.</p>
+      <div class="why"><b>Why it moves price:</b> higher expected rates make holding dollars more attractive relative to other currencies (rate differential), and make non-yielding gold less attractive to hold.</div>
+    </div>
+    <div class="driver-card">
+      <div class="driver-head"><h3>Inflation (CPI / PCE)</h3><span class="driver-tag tag-bear">Mixed, leaning hawkish</span></div>
+      <p>May CPI at 4.2% headline, 2.9% core. The gap between the two tells the real story: this isn't broad demand-driven inflation, it's an energy-price shock from the Iran conflict feeding through to headline numbers. Core staying contained is the one thing keeping this from being a full-blown crisis print.</p>
+      <div class="why"><b>Why it moves price:</b> headline CPI is what the Fed and markets react to fastest, even when the underlying (core) picture is more nuanced — so this print outweighs its "true" signal.</div>
+    </div>
+    <div class="driver-card">
+      <div class="driver-head"><h3>Labour market</h3><span class="driver-tag tag-bull">USD bullish</span></div>
+      <p>May non-farm payrolls printed 172,000 against expectations of roughly 80–85,000 — a beat large enough to materially shift rate-hike odds higher within hours. A resilient labour market removes the Fed's main justification for cutting, since "support the labour market" was the dovish case's foundation.</p>
+      <div class="why"><b>Why it moves price:</b> a strong jobs market gives the Fed room to stay restrictive without risking a recession narrative, which is dollar-supportive and gold/equity-neutral-to-negative in the short run.</div>
+    </div>
+    <div class="driver-card">
+      <div class="driver-head"><h3>Iran conflict / geopolitical risk</h3><span class="driver-tag tag-mixed">Gold's dilemma</span></div>
+      <p>Normally a war that threatens Gulf oil supply is straightforwardly gold-bullish — safe-haven demand surges. This time it's structurally different: the conflict is driving an energy-price spike that's pushing inflation higher, which keeps the Fed hawkish, which makes holding non-yielding gold more expensive. The safe-haven bid and the rate-driven headwind are fighting each other.</p>
+      <div class="why"><b>Why it moves price:</b> gold needs either a ceasefire (removing the inflation channel, freeing the Fed to cut) or a sharp escalation (overwhelming the rate story with pure fear) to break decisively in either direction. Right now it's stuck between the two.</div>
+    </div>
+  </div>
+
+  <!-- CALENDAR -->
+  <div class="section-label"><span>What to watch next</span><span class="ts">High-impact, next 1–2 weeks</span></div>
+  <table class="calendar-table">
+    <thead><tr><th style="width:18px;"></th><th>Event</th><th>Why it matters here</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="impact-dot impact-high"></span></td>
+        <td><b>US PCE inflation</b><br><span style="color:var(--ink-faint); font-size:12px;">Fed's preferred gauge</span></td>
+        <td>If core PCE confirms the CPI's "energy shock, not broad inflation" story, it reopens the door to a more dovish Fed read — bearish for USD, supportive for gold.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-high"></span></td>
+        <td><b>Iran ceasefire developments</b><br><span style="color:var(--ink-faint); font-size:12px;">Ongoing, watch headlines</span></td>
+        <td>A signed ceasefire would be the single biggest catalyst on this page — it removes the energy-inflation channel and could let gold and risk assets rally together while taking pressure off the dollar's hawkish-Fed bid.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-med"></span></td>
+        <td><b>BoE rate decision</b><br><span style="color:var(--ink-faint); font-size:12px;">18 June, day after FOMC</span></td>
+        <td>UK inflation at 3.3% with a hold-leaning consensus. A surprise hawkish lean from the BoE would support GBP and indirectly cap further DXY upside.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-med"></span></td>
+        <td><b>Next NFP release</b><br><span style="color:var(--ink-faint); font-size:12px;">First Friday of next month</span></td>
+        <td>Markets are now hypersensitive to labour data after May's beat repriced hike odds. A weak print could unwind a meaningful chunk of the dollar's recent strength fast.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-low"></span></td>
+        <td><b>FTSE / DAX earnings updates</b><br><span style="color:var(--ink-faint); font-size:12px;">Ongoing through the quarter</span></td>
+        <td>Underpins the "earnings recovery" thesis behind the constructive FTSE bias — any disappointment removes a key support pillar.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- CENTRAL BANK COMPARISON -->
+  <div class="section-label"><span>Central bank scoreboard</span><span class="ts">Who's hawkish, who's dovish</span></div>
+  <table class="calendar-table">
+    <thead><tr><th style="width:18px;"></th><th>Bank</th><th>Rate</th><th>Stance</th><th>Why it matters to your pairs</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="impact-dot impact-high"></span></td>
+        <td><b>Federal Reserve</b><br><span style="color:var(--ink-faint); font-size:12px;">Kevin Warsh, first meeting done</span></td>
+        <td>Holding</td>
+        <td style="color:var(--red); font-weight:500;">Hawkish-leaning</td>
+        <td>Half the committee now leans toward a hike, not a cut. This is the single biggest driver on this page right now — it's why USD is firm against almost everything.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-med"></span></td>
+        <td><b>Bank of England</b><br><span style="color:var(--ink-faint); font-size:12px;">8-1 vote to hold</span></td>
+        <td>3.75%</td>
+        <td style="color:var(--amber); font-weight:500;">Hold-leaning, slight hawkish tilt</td>
+        <td>UK inflation at 3.3% keeps cuts off the table for now. GBP/USD is currently mostly a dollar story rather than a sterling story.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-low"></span></td>
+        <td><b>ECB</b><br><span style="color:var(--ink-faint); font-size:12px;">Eurozone</span></td>
+        <td>Holding</td>
+        <td style="color:var(--ink-soft); font-weight:500;">Neutral</td>
+        <td>EUR is the biggest single component of DXY (57.6%) — ECB inaction by default lets the Fed's hawkish tilt do most of the work on EUR/USD.</td>
+      </tr>
+      <tr>
+        <td><span class="impact-dot impact-low"></span></td>
+        <td><b>Bank of Japan</b><br><span style="color:var(--ink-faint); font-size:12px;">Japan</span></td>
+        <td>Low / gradual hikes</td>
+        <td style="color:var(--ink-soft); font-weight:500;">Cautiously normalising</td>
+        <td>The widening US-Japan rate gap is what's kept USD/JPY elevated; any faster BoJ move would be a notable JPY-bullish surprise.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- CORRELATION CHEATSHEET -->
+  <div class="section-label"><span>Intermarket cheatsheet</span><span class="ts">How these assets typically move together</span></div>
+  <div class="explain-grid">
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>DXY vs Gold <span class="arrow">▸</span></h4>
+      <div class="explain-body">Usually strongly inverse — a stronger dollar makes gold (priced in USD) more expensive for foreign buyers, dampening demand. Watch for this relationship to break down during acute geopolitical stress, like now, when gold's safe-haven bid fights the dollar's rate-driven strength.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>US 10Y yield vs Gold <span class="arrow">▸</span></h4>
+      <div class="explain-body">Usually inverse — rising real yields increase the opportunity cost of holding non-yielding gold. This is the single cleanest read on gold's rate sensitivity, often clearer than watching DXY directly.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>Oil vs Inflation expectations <span class="arrow">▸</span></h4>
+      <div class="explain-body">Energy is a direct CPI input, so oil spikes feed into headline inflation within weeks. With the Iran conflict ongoing, this is currently one of the most important charts to watch — it's the transmission line from geopolitics to Fed policy.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>Risk sentiment vs JPY / CHF <span class="arrow">▸</span></h4>
+      <div class="explain-body">Yen and franc are traditional funding/safe-haven currencies. They tend to strengthen when equities sell off sharply (risk-off) and weaken when risk appetite is high, somewhat independent of their own domestic data.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>FTSE 100 vs GBP <span class="arrow">▸</span></h4>
+      <div class="explain-body">Often inverse, unusually — many FTSE 100 companies earn revenue abroad, so a weaker pound can boost their reported (translated) earnings, pushing the index up even as sterling falls.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>S&amp;P 500 vs Nasdaq divergence <span class="arrow">▸</span></h4>
+      <div class="explain-body">When these diverge sharply, it's usually a tech/AI-capex-specific story (rates, chip demand, single-stock earnings) rather than a broad macro one — useful for telling apart a market-wide move from a sector rotation.</div>
+    </div>
+  </div>
+
+  <!-- UNDERSTAND THIS -->
+  <div class="section-label"><span>Understand this, not just read it</span><span class="ts">Tap to expand</span></div>
+  <div class="explain-grid">
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>Why does CPI move the dollar at all? <span class="arrow">▸</span></h4>
+      <div class="explain-body">Higher inflation pressures the Fed to keep interest rates higher for longer (or hike). Higher rates make dollar-denominated assets pay more to hold, pulling in foreign capital and pushing demand for USD up — strengthening it relative to currencies from countries with lower rates.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>Why is gold "non-yielding" — and why does that matter? <span class="arrow">▸</span></h4>
+      <div class="explain-body">Gold pays no interest or dividend just for holding it. When rates rise, the opportunity cost of holding gold instead of a bond paying 4-5% goes up — so capital rotates out of gold into yield-bearing assets. That's why hawkish Fed news is usually gold-negative, even amid uncertainty.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>What's a "dot plot" and why do traders obsess over it? <span class="arrow">▸</span></h4>
+      <div class="explain-body">It's an anonymous chart of where each of the Fed's 18 policymakers thinks rates should be at future meetings. Markets use the median dot to estimate the most likely policy path — a shift in the dots (even with no rate change announced) can move markets as much as an actual decision.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>Why can a war be both gold-bullish and gold-bearish? <span class="arrow">▸</span></h4>
+      <div class="explain-body">Wars usually trigger safe-haven buying (bullish for gold). But if the war disrupts energy supply, it also pushes inflation up, which can force central banks to keep rates higher — and higher rates pull money out of gold. The net effect depends on which force is stronger at a given moment.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>Why does a strong jobs report sometimes hurt stocks/gold? <span class="arrow">▸</span></h4>
+      <div class="explain-body">A "good" economic number can be read as bad news for rate-sensitive assets, because it reduces the chance the Fed needs to cut rates to support the economy. Markets often price in future Fed moves more than the present state of the economy.</div>
+    </div>
+    <div class="explain-card" onclick="this.classList.toggle('open')">
+      <h4>What does "DXY" actually measure? <span class="arrow">▸</span></h4>
+      <div class="explain-body">The Dollar Index tracks USD against a basket of six currencies, weighted mostly by the euro (57.6%), then yen, pound, Canadian dollar, krona, and franc. It rises when USD strengthens against that basket on average — even if it's weak against one currency in isolation.</div>
+    </div>
+  </div>
+
+  <div class="ask-box">
+    <div class="ask-text">
+      <h3>Want this explained for your setup?</h3>
+      <p>Ask Claude to connect any of this to your trades, journal, or bias for the week.</p>
+    </div>
+    <div class="ask-buttons">
+      <button class="ask-chip" onclick="alert('Open this in chat and ask: \'Refresh the macro desk with the latest headlines\'')">Refresh with live data</button>
+      <button class="ask-chip" onclick="alert('Open this in chat and ask: \'How should this week\\'s macro bias affect my gold/DXY setups?\'')">Apply to my setups</button>
+      <button class="ask-chip" onclick="alert('Open this in chat and ask: \'Explain the Fed dot plot like I\\'m new to it\'')">Explain a term</button>
+    </div>
+  </div>
+
+  <div class="sources-bar">
+    <div class="src-list">
+      <span>Sources this build: Reuters</span><span>Bloomberg</span><span>CNBC</span><span>BLS</span><span>CME FedWatch</span><span>World Gold Council</span><span>Goldman Sachs Research</span>
+    </div>
+    <div>Not financial advice. Levels and figures are point-in-time and decay quickly — always verify against a live feed before trading.</div>
+  </div>
+</div>
+
+<script>
+  function pad(n){return n.toString().padStart(2,'0');}
+  function tickClock(){
+    const d = new Date();
+    const utc = new Date(d.getTime() + d.getTimezoneOffset()*60000);
+    const ldn = new Date(utc.getTime() + 60*60000);
+    document.getElementById('liveclock').textContent =
+      pad(ldn.getHours())+':'+pad(ldn.getMinutes())+':'+pad(ldn.getSeconds())+' BST · '+
+      ldn.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+  }
+  tickClock();
+  setInterval(tickClock, 1000);
+
+  function refreshDesk(){
+    const overlay = document.getElementById('loadingOverlay');
+    overlay.classList.add('active');
+    setTimeout(()=>{ overlay.classList.remove('active'); }, 3200);
+  }
+</script>
+
+</body>
+</html>
