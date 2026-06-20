@@ -485,6 +485,59 @@
     </div>
   </div>
 
+  <!-- GEOPOLITICAL TRACKER -->
+  <div class="section-label"><span>Significant statements tracker</span><span class="ts">Fed · White House · Iran · central banks</span></div>
+  <div class="side-card" style="margin-bottom:10px;">
+    <h3>Why this gets its own section</h3>
+    <p style="font-size:13px; color:var(--ink-soft); line-height:1.6; margin:0;">Unscheduled statements from key figures — the Fed chair, the White House, central bank heads, Iranian officials — move markets faster than scheduled data because there's no time to price them in advance. This section pulls anything from a market-moving voice, not just one person or one conflict.</p>
+  </div>
+  <div class="drivers-grid" style="margin-top:0;">
+    <div class="driver-card">
+      <div class="driver-head"><h3>Watch for: escalation / hawkish language</h3><span class="driver-tag tag-bear">Risk-off / rate-up trigger</span></div>
+      <p>Strike threats, Hormuz mentions, troop movements, rejected ceasefire terms on the geopolitical side — or unexpectedly hawkish Fed/central bank language on the policy side. Both push in a similar direction: higher uncertainty or higher rate expectations.</p>
+      <div class="why"><b>Why it moves price:</b> geopolitical escalation feeds oil-driven inflation; hawkish policy language feeds rate expectations directly. Either can spike USD and pressure risk assets.</div>
+    </div>
+    <div class="driver-card">
+      <div class="driver-head"><h3>Watch for: de-escalation / dovish language</h3><span class="driver-tag tag-bull">Relief trigger</span></div>
+      <p>Ceasefire signing, troop withdrawal, sanctions relief talk — or a Fed/central bank official softening on rates. Either could unwind the current hawkish-Fed, energy-shock narrative driving this whole page.</p>
+      <div class="why"><b>Why it moves price:</b> removes either the inflation channel (geopolitics) or the rate channel (policy) currently keeping USD bid and gold capped.</div>
+    </div>
+  </div>
+  <div class="side-card" style="margin-top:16px;" id="geoTracker">
+    <h3>Live statement feed</h3>
+    <div class="headline-item" style="color:var(--ink-faint); font-style:italic;">Loading latest significant statements from the live feed...</div>
+  </div>
+
+  <!-- GLOSSARY -->
+  <div class="section-label"><span>Glossary — every term you'll see on this page</span><span class="ts">Search or scroll</span></div>
+  <input type="text" id="glossarySearch" placeholder="Search a term (e.g. CPI, dot plot, yield)..." style="width:100%; padding:11px 14px; font-family:var(--sans); font-size:14px; border:1px solid var(--rule-soft); background:var(--paper-raised); margin-bottom:16px; border-radius:2px;" oninput="filterGlossary(this.value)">
+  <div class="explain-grid" id="glossaryGrid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>CPI <span class="arrow">▸</span></h4><div class="explain-body">Consumer Price Index — measures how much prices for everyday goods/services have changed. The headline inflation number markets and central banks react to most.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Core CPI / PCE <span class="arrow">▸</span></h4><div class="explain-body">Inflation excluding volatile food and energy prices. Considered a cleaner read on underlying inflation trends than the headline number.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>PCE <span class="arrow">▸</span></h4><div class="explain-body">Personal Consumption Expenditures — the Fed's officially preferred inflation gauge, slightly different methodology to CPI, usually runs a bit lower.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>NFP (Non-Farm Payrolls) <span class="arrow">▸</span></h4><div class="explain-body">Monthly US jobs report excluding farm workers, government, and a few other categories. One of the most market-moving releases every month.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Dot plot <span class="arrow">▸</span></h4><div class="explain-body">An anonymous chart showing where each of the Fed's 18 officials expects interest rates to be at future meetings. The median dot signals the likely policy path.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>FOMC <span class="arrow">▸</span></h4><div class="explain-body">Federal Open Market Committee — the Fed group that actually votes on interest rate decisions. Meets eight times a year.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Hawkish / Dovish <span class="arrow">▸</span></h4><div class="explain-body">Hawkish means leaning toward higher rates / tighter policy (usually USD-bullish). Dovish means leaning toward lower rates / looser policy (usually USD-bearish).</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Rate differential <span class="arrow">▸</span></h4><div class="explain-body">The gap between two countries' interest rates. Money tends to flow toward the currency offering the higher rate, all else equal — a core driver of FX moves.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>DXY (Dollar Index) <span class="arrow">▸</span></h4><div class="explain-body">Tracks the US dollar against a basket of six currencies, weighted mostly toward the euro (57.6%). Rises when USD strengthens against that basket on average.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Yield (bond yield) <span class="arrow">▸</span></h4><div class="explain-body">The return an investor earns for holding a government bond. Rising yields usually pull money out of non-yielding assets like gold, and can pressure stocks by raising the "risk-free" comparison rate.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Real yield <span class="arrow">▸</span></h4><div class="explain-body">Bond yield minus inflation. This is what actually matters for gold — even a high nominal yield isn't gold-bearish if inflation is eating all of it.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Safe haven <span class="arrow">▸</span></h4><div class="explain-body">An asset investors flock to during fear or uncertainty — gold, USD, JPY, CHF, and US Treasuries are the classic examples.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Risk-on / Risk-off <span class="arrow">▸</span></h4><div class="explain-body">Risk-on means investors are comfortable taking risk (buying stocks, selling havens). Risk-off means the opposite — fear dominates, money rotates into safety.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Quantitative easing / tightening (QE/QT) <span class="arrow">▸</span></h4><div class="explain-body">QE: central bank buys assets to inject money into the system, pushing rates down. QT: the reverse — letting those assets run off, tightening financial conditions.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Basis point (bp) <span class="arrow">▸</span></h4><div class="explain-body">One hundredth of a percentage point. A "25bp hike" means a 0.25% increase in rates.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>GDP <span class="arrow">▸</span></h4><div class="explain-body">Gross Domestic Product — total value of everything a country produces. The broadest measure of economic growth or contraction.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Recession <span class="arrow">▸</span></h4><div class="explain-body">Commonly defined as two consecutive quarters of negative GDP growth, though official calls (e.g. in the US) weigh broader data too.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>DXY-weighted currencies <span class="arrow">▸</span></h4><div class="explain-body">EUR (57.6%), JPY (13.6%), GBP (11.9%), CAD (9.1%), SEK (4.2%), CHF (3.6%) — the six currencies that make up the dollar index basket.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Central bank divergence <span class="arrow">▸</span></h4><div class="explain-body">When two central banks move policy in opposite directions (one hiking, one cutting) — usually creates the cleanest, strongest FX trends.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Forward guidance <span class="arrow">▸</span></h4><div class="explain-body">A central bank signalling its likely future policy moves in advance, to shape market expectations before anything actually changes.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Carry trade <span class="arrow">▸</span></h4><div class="explain-body">Borrowing in a low-rate currency (like JPY) to invest in a higher-rate one, pocketing the difference. Unwinds violently during risk-off shocks.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>OPEC+ <span class="arrow">▸</span></h4><div class="explain-body">The oil producers' cartel (OPEC plus allies like Russia) that coordinates output to influence oil prices — a key input into global inflation.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Terminal rate <span class="arrow">▸</span></h4><div class="explain-body">The level markets expect a central bank's rate-hiking or cutting cycle to eventually settle at — the "final destination" rate.</div></div>
+    <div class="explain-card gterm" onclick="this.classList.toggle('open')"><h4>Stagflation <span class="arrow">▸</span></h4><div class="explain-body">The uncomfortable combination of high inflation and weak/no growth — the hardest environment for a central bank to navigate, since fixing one usually worsens the other.</div></div>
+  </div>
+
   <div class="ask-box">
     <div class="ask-text">
       <h3>Want this explained for your setup?</h3>
@@ -517,24 +570,35 @@
   }
   tickClock();
   setInterval(tickClock, 1000);
-  
-fetch('data/headlines.json')
-  .then(r => r.json())
-  .then(data => {
-    const keywords = ['fed','rate','inflation','cpi','dollar','gold','ftse','dax','s&p','central bank','ecb','boe','treasury','yield','recession','gdp','geopolit','opec','oil price'];
-const items = (data.articles || []).filter(a =>
-  keywords.some(k => (a.title || '').toLowerCase().includes(k))
-);
-    const list = document.querySelector('.side-card .headline-item')?.parentElement;
-    if (!list || items.length === 0) return;
-    const html = items.slice(0, 8).map(a => `
-      <div class="headline-item">${a.title}
-        <span class="meta">${a.source?.name || ''} · ${new Date(a.publishedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span>
-      </div>`).join('');
-    list.innerHTML = '<h3>Live headlines</h3>' + html;
-  })
-  .catch(() => {});
-  
+
+  fetch('data/headlines.json')
+    .then(r => r.json())
+    .then(data => {
+      const items = data.articles || [];
+      const geoKeywords = ['trump','iran','tehran','hormuz','ceasefire','middle east','sanctions','israel','warsh','powell','fed chair','ecb','lagarde','bank of england','bailey','white house','treasury secretary','rate decision','press conference'];
+      const geoItems = items.filter(a => geoKeywords.some(k => (a.title || '').toLowerCase().includes(k)));
+      const geoBox = document.getElementById('geoTracker');
+      if (geoBox) {
+        if (geoItems.length === 0) {
+          geoBox.innerHTML = '<h3>Live statement feed</h3><div class="headline-item" style="color:var(--ink-faint); font-style:italic;">No Trump/Iran headlines in the current pull — check back after the next refresh.</div>';
+        } else {
+          const html = geoItems.slice(0, 6).map(a => `
+            <div class="headline-item">${a.title}
+              <span class="meta">${a.source?.name || ''} · ${new Date(a.publishedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span>
+            </div>`).join('');
+          geoBox.innerHTML = '<h3>Live statement feed</h3>' + html;
+        }
+      }
+    })
+    .catch(() => {});
+
+  function filterGlossary(q){
+    q = q.toLowerCase();
+    document.querySelectorAll('.gterm').forEach(card=>{
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(q) ? '' : 'none';
+    });
+  }
 
   function refreshDesk(){
     const overlay = document.getElementById('loadingOverlay');
