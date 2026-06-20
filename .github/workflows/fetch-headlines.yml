@@ -19,7 +19,7 @@ jobs:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: |
           mkdir -p data
-          curl -s "https://newsapi.org/v2/everything?q=(Fed%20OR%20DXY%20OR%20gold%20OR%20FTSE%20OR%20inflation%20OR%20CPI%20OR%20Federal%20Reserve)&language=en&sortBy=publishedAt&pageSize=20&apiKey=$NEWSAPI_KEY" > data/headlines.json
+       curl -s "https://newsapi.org/v2/everything?q=(%22Federal%20Reserve%22%20OR%20%22interest%20rates%22%20OR%20inflation%20OR%20%22dollar%20index%22%20OR%20gold%20OR%20FTSE%20OR%20DAX%20OR%20%22central%20bank%22)&domains=reuters.com,bloomberg.com,cnbc.com,ft.com,wsj.com&language=en&sortBy=publishedAt&pageSize=20&apiKey=$NEWSAPI_KEY" > data/headlines.json
 
       - name: Fetch economic calendar from TradingEconomics (free guest tier)
         run: |
