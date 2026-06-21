@@ -22,10 +22,19 @@ prompt = """You are a macro analyst. Based on these recent financial headlines, 
 Headlines:
 """ + headline_text
 
-key = os.environ.get('GEMINI_KEY', '')
-url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + key
+key = os.environ.get('GEMINI_KEY', '').strip()
+print("Key length check:", len(key))
+
+url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 body = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode()
-req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+req = urllib.request.Request(
+    url,
+    data=body,
+    headers={
+        "Content-Type": "application/json",
+        "x-goog-api-key": key
+    }
+)
 
 analysis = {}
 try:
