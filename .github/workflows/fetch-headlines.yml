@@ -17,8 +17,10 @@ jobs:
       - name: Debug secret length
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          TESTKEY: ${{ secrets.TESTKEY }}
         run: |
-          echo "Bash sees length: ${#GEMINI_KEY}"
+          echo "Bash sees GEMINI_KEY length: ${#GEMINI_KEY}"
+          echo "Bash sees TESTKEY length: ${#TESTKEY}"
 
       - name: Fetch headlines
         env:
