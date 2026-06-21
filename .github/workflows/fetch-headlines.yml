@@ -25,49 +25,7 @@ jobs:
       - name: Generate analysis with Gemini
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
-        run: |
-          python3 -c "
-          import json, urllib.request, os
-
-          with open('data/headlines.json') as f:
-              headlines_data = json.load(f)
-          articles = headlines_data.get('articles', [])[:15]
-          titles = [a.get('title','') for a in articles]
-          headline_text = chr(10).join(titles)
-
-          prompt = '''You are a macro analyst. Based on these recent financial headlines, write a JSON object with this exact structure, no markdown, no extra text:
-          {
-            \"usd_bias\": \"Bullish\" or \"Bearish\" or \"Neutral\",
-            \"usd_reason\": \"one sentence why\",
-            \"gold_bias\": \"Bullish\" or \"Bearish\" or \"Neutral\",
-            \"gold_reason\": \"one sentence why\",
-            \"indices_bias\": \"Bullish\" or \"Bearish\" or \"Neutral\",
-            \"indices_reason\": \"one sentence why\",
-            \"lead_story\": \"2-3 sentence summary of the single biggest driver right now\",
-            \"updated\": \"current UTC timestamp\"
-          }
-
-          Headlines:
-          ''' + headline_text
-
-          key = os.environ['GEMINI_KEY']
-          url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={key}'
-          body = json.dumps({'contents':[{'parts':[{'text':prompt}]}]}).encode()
-          req = urllib.request.Request(url, data=body, headers={'Content-Type':'application/json'})
-          try:
-              with urllib.request.urlopen(req, timeout=30) as resp:
-                  result = json.loads(resp.read())
-                  text = result['candidates'][0]['content']['parts'][0]['text']
-                  text = text.strip().removeprefix('\`\`\`json').removesuffix('\`\`\`').strip()
-                  analysis = json.loads(text)
-          except urllib.error.HTTPError as e:
-              analysis = {'error': f'HTTP {e.code}: {e.read().decode()[:300]}'}
-          except Exception as e:
-              analysis = {'error': str(e)}
-
-          with open('data/analysis.json', 'w') as f:
-              json.dump(analysis, f, indent=2)
-          "
+        run: python3 analyze.py
 
       - name: Commit data
         run: |
