@@ -2,9 +2,9 @@
   "usd_bias": "Bullish",
   "usd_reason": "The dollar has risen to a one-year high on increased prospects of higher US interest rates",
   "gold_bias": "Bearish",
-  "gold_reason": "Higher US interest rates typically increase the opportunity cost of holding gold, which is likely to decrease its price",
+  "gold_reason": "Higher US interest rates typically increase the opportunity cost of holding gold, which does not pay interest",
   "indices_bias": "Bearish",
-  "indices_reason": "The S&P 500 had its worst performance for a new Fed chair since 1994, indicating a negative market reaction to the Fed's decision",
-  "lead_story": "The Federal Reserve, led by new Chairman Kevin Warsh, has held interest rates steady, but officials are split over possible hikes this year, causing the dollar to rise to a one-year high and the S&P 500 to have its worst performance for a new Fed chair since 1994. The decision has significant implications for credit cards, savings rates, mortgages, and car loans. The market is now waiting to see how the Fed will proceed with its monetary policy, with some expecting higher interest rates in the future.",
-  "updated": "2026-06-22T14:30:00Z"
+  "indices_reason": "The S&P 500 had its worst performance for a new Fed chair since 1994, indicating a negative market reaction to the new Fed leadership",
+  "lead_story": "The Federal Reserve, led by new Chairman Kevin Warsh, has held interest rates steady, but the prospect of higher rates has driven the dollar to a one-year high and led to a negative market reaction. The Fed's decision has significant implications for credit cards, savings rates, mortgages, and car loans. The new Fed leadership is expected to bring about changes, with Warsh's task forces being key to understanding the new direction of the central bank.",
+  "updated": "2026-06-22T22:49:23Z"
 }
