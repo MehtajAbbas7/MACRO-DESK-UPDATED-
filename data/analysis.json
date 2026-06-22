@@ -1,3 +1,10 @@
 {
-  "error": "HTTP 403: error code: 1010\n"
+  "usd_bias": "Bullish",
+  "usd_reason": "The dollar has risen to a one-year high on increased prospects of higher US interest rates",
+  "gold_bias": "Bearish",
+  "gold_reason": "Higher US interest rates typically lead to a stronger dollar and lower gold prices",
+  "indices_bias": "Bearish",
+  "indices_reason": "The S&P 500 experienced its worst performance for a new Fed chair since 1994, indicating a potentially negative outlook for stocks",
+  "lead_story": "The Federal Reserve, led by new Chairman Kevin Warsh, has held interest rates steady, but officials are split over possible hikes this year, leading to increased prospects of higher US interest rates and a stronger dollar. The decision has led to a mixed reaction in Treasury yields and a decline in the stock market. The new Fed chair's task forces are seen as key to understanding the central bank's future direction, with investors closely watching for signs of potential rate hikes.",
+  "updated": "2026-06-22T14:30:00Z"
 }
