@@ -7,18 +7,30 @@ articles = headlines_data.get('articles', [])[:15]
 titles = [a.get('title', '') for a in articles if a.get('title')]
 headline_text = "\n".join(titles)
 
-prompt = """You are a macro analyst. Based on these recent financial headlines, write a JSON object with this exact structure, no markdown formatting, no extra text before or after, just the raw JSON:
+prompt = """You are a macro analyst writing for someone who wants simple, clear explanations, not jargon-heavy analysis. Based on these recent financial headlines, write a JSON object with this exact structure, no markdown formatting, no extra text before or after, just the raw JSON:
 {
   "usd_bias": "Bullish or Bearish or Neutral",
-  "usd_reason": "one sentence why",
+  "usd_reason": "one simple sentence why",
   "gold_bias": "Bullish or Bearish or Neutral",
-  "gold_reason": "one sentence why",
+  "gold_reason": "one simple sentence why",
   "indices_bias": "Bullish or Bearish or Neutral",
-  "indices_reason": "one sentence why",
-  "lead_story": "2-3 sentence summary of the single biggest driver right now"
+  "indices_reason": "one simple sentence why",
+  "lead_story": "2-3 simple sentences on the single biggest driver right now",
+  "drivers": [
+    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"},
+    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"},
+    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"},
+    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"}
+  ],
+  "central_banks": [
+    {"bank": "Federal Reserve", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"},
+    {"bank": "Bank of England", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"},
+    {"bank": "ECB", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"},
+    {"bank": "Bank of Japan", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"}
+  ]
 }
 
-Do not include an "updated" field, it will be added separately.
+Do not include an "updated" field, it will be added separately. Keep every explanation simple, plain-English, no jargon without explaining it.
 
 Headlines:
 """ + headline_text
@@ -64,7 +76,5 @@ if "error" not in analysis:
 with open('data/analysis.json', 'w') as f:
     json.dump(analysis, f, indent=2)
 
-print("Done. Result:")
-print(json.dumps(analysis, indent=2))
 print("Done. Result:")
 print(json.dumps(analysis, indent=2))
