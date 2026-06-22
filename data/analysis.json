@@ -1,58 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The US dollar is rising due to increased prospects of higher US interest rates",
-  "gold_bias": "Neutral",
-  "gold_reason": "Gold prices are stable as investors wait for more information on the Fed's future plans",
+  "usd_reason": "The dollar is rising because investors think US interest rates might go up soon",
+  "gold_bias": "Bearish",
+  "gold_reason": "Higher US interest rates make gold less attractive to investors",
   "indices_bias": "Bearish",
-  "indices_reason": "Stock market indices are falling after the Fed's decision to hold interest rates steady",
-  "lead_story": "The Federal Reserve has held interest rates steady, but officials are split over possible hikes this year. This decision has led to a rise in the US dollar and a fall in stock market indices. The new Fed chairman, Kevin Warsh, is setting out to remake the Fed and his task forces will be key to understanding the new direction of the central bank",
-  "drivers": [
-    {
-      "title": "Interest Rates",
-      "tag": "Bullish",
-      "explanation": "Higher interest rates make the US dollar more attractive to investors, causing its value to rise. The prospect of higher interest rates in the US is currently driving up the value of the dollar"
-    },
-    {
-      "title": "Fed Policy",
-      "tag": "Mixed",
-      "explanation": "The Fed's decision to hold interest rates steady has caused uncertainty among investors, leading to a fall in stock market indices. However, the new Fed chairman's plans to remake the Fed could lead to more decisive action in the future"
-    },
-    {
-      "title": "Economic Growth",
-      "tag": "Bearish",
-      "explanation": "Slowing economic growth could lead to lower interest rates, causing the US dollar to fall in value. However, the current prospects of higher interest rates are outweighing concerns about economic growth"
-    },
-    {
-      "title": "Global Events",
-      "tag": "Neutral",
-      "explanation": "Global events such as the G7 summit are not currently having a significant impact on financial markets. However, they could potentially cause volatility in the future if major announcements are made"
-    }
-  ],
-  "central_banks": [
-    {
-      "bank": "Federal Reserve",
-      "rate": "held steady",
-      "stance": "Hawkish",
-      "note": "The Fed's decision to hold interest rates steady has been seen as a hawkish move, indicating that the central bank is prepared to raise rates in the future if necessary"
-    },
-    {
-      "bank": "Bank of England",
-      "rate": "unchanged",
-      "stance": "Neutral",
-      "note": "The Bank of England has not made any significant changes to its interest rates or policy stance recently, and is currently taking a neutral approach"
-    },
-    {
-      "bank": "ECB",
-      "rate": "low",
-      "stance": "Dovish",
-      "note": "The European Central Bank has a dovish stance, indicating that it is willing to keep interest rates low to support economic growth in the eurozone"
-    },
-    {
-      "bank": "Bank of Japan",
-      "rate": "very low",
-      "stance": "Dovish",
-      "note": "The Bank of Japan has a very dovish stance, with extremely low interest rates aimed at stimulating economic growth in Japan"
-    }
-  ],
-  "updated": "2026-06-22T22:54:26Z"
+  "indices_reason": "The stock market is uncertain about the new Fed leadership and possible interest rate hikes",
+  "lead_story": "The Federal Reserve, led by new chairman Kevin Warsh, has decided to keep interest rates steady for now, but some officials think rates might go up later this year. This decision is causing uncertainty in the stock market and making the dollar stronger. The Fed's next moves will be closely watched by investors and could affect many parts of the economy.",
+  "updated": "2026-06-22T22:59:23Z"
 }
