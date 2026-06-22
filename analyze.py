@@ -15,9 +15,10 @@ prompt = """You are a macro analyst. Based on these recent financial headlines, 
   "gold_reason": "one sentence why",
   "indices_bias": "Bullish or Bearish or Neutral",
   "indices_reason": "one sentence why",
-  "lead_story": "2-3 sentence summary of the single biggest driver right now",
-  "updated": "current UTC date and time"
+  "lead_story": "2-3 sentence summary of the single biggest driver right now"
 }
+
+Do not include an "updated" field, it will be added separately.
 
 Headlines:
 """ + headline_text
@@ -56,8 +57,14 @@ except urllib.error.HTTPError as e:
 except Exception as e:
     analysis = {"error": str(e)}
 
+if "error" not in analysis:
+    from datetime import datetime, timezone
+    analysis["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
 with open('data/analysis.json', 'w') as f:
     json.dump(analysis, f, indent=2)
 
+print("Done. Result:")
+print(json.dumps(analysis, indent=2))
 print("Done. Result:")
 print(json.dumps(analysis, indent=2))
