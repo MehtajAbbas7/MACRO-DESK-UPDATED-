@@ -571,6 +571,44 @@
   tickClock();
   setInterval(tickClock, 1000);
 
+  fetch('data/analysis.json')
+    .then(r => r.json())
+    .then(a => {
+      if (!a || a.error) return;
+
+      // Update bias grid
+      const biasCells = document.querySelectorAll('.bias-cell');
+      const map = [
+        {dir: a.usd_bias, sub: a.usd_reason},
+        {dir: a.gold_bias, sub: a.gold_reason},
+        null,
+        {dir: a.indices_bias, sub: a.indices_reason}
+      ];
+      biasCells.forEach((cell, i) => {
+        const m = map[i];
+        if (!m) return;
+        const dirEl = cell.querySelector('.bias-dir');
+        const subEl = cell.querySelector('.bias-sub');
+        if (dirEl && m.dir) {
+          dirEl.textContent = m.dir;
+          dirEl.className = 'bias-dir ' + (m.dir.toLowerCase().includes('bull') ? 'bull' : m.dir.toLowerCase().includes('bear') ? 'bear' : 'neutral');
+        }
+        if (subEl && m.sub) subEl.textContent = m.sub;
+      });
+
+      // Update lead story paragraph (first <p> in .lead-story)
+      const leadP = document.querySelector('.lead-story p');
+      if (leadP && a.lead_story) leadP.textContent = a.lead_story;
+
+      // Update "last built" timestamp
+      const lastBuilt = document.getElementById('lastBuilt');
+      if (lastBuilt && a.updated) {
+        const d = new Date(a.updated);
+        lastBuilt.textContent = d.toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}) + ' (auto-generated)';
+      }
+    })
+    .catch(() => {});
+
   fetch('data/headlines.json')
     .then(r => r.json())
     .then(data => {
