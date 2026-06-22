@@ -571,7 +571,7 @@
   tickClock();
   setInterval(tickClock, 1000);
 
-  fetch('data/analysis.json')
+fetch('data/analysis.json')
     .then(r => r.json())
     .then(a => {
       if (!a || a.error) return;
@@ -596,15 +596,47 @@
         if (subEl && m.sub) subEl.textContent = m.sub;
       });
 
-      // Update lead story paragraph (first <p> in .lead-story)
+      // Update lead story paragraph
       const leadP = document.querySelector('.lead-story p');
       if (leadP && a.lead_story) leadP.textContent = a.lead_story;
 
-      // Update "last built" timestamp
+      // Update last built timestamp
       const lastBuilt = document.getElementById('lastBuilt');
       if (lastBuilt && a.updated) {
         const d = new Date(a.updated);
         lastBuilt.textContent = d.toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}) + ' (auto-generated)';
+      }
+
+      // Replace drivers grid content
+      if (a.drivers && a.drivers.length) {
+        const driverCards = document.querySelectorAll('.drivers-grid .driver-card');
+        a.drivers.forEach((d, i) => {
+          if (!driverCards[i]) return;
+          const tagClass = d.tag.toLowerCase().includes('bull') ? 'tag-bull' : d.tag.toLowerCase().includes('bear') ? 'tag-bear' : 'tag-mixed';
+          driverCards[i].innerHTML = `
+            <div class="driver-head"><h3>${d.title}</h3><span class="driver-tag ${tagClass}">${d.tag}</span></div>
+            <p>${d.explanation}</p>`;
+        });
+      }
+
+      // Replace central bank scoreboard table
+      if (a.central_banks && a.central_banks.length) {
+        const cbTable = document.querySelectorAll('.calendar-table')[0];
+        if (cbTable) {
+          const tbody = cbTable.querySelector('tbody');
+          if (tbody) {
+            tbody.innerHTML = a.central_banks.map(cb => {
+              const dotClass = cb.stance.toLowerCase().includes('hawk') ? 'impact-high' : cb.stance.toLowerCase().includes('dov') ? 'impact-low' : 'impact-med';
+              return `<tr>
+                <td><span class="impact-dot ${dotClass}"></span></td>
+                <td><b>${cb.bank}</b></td>
+                <td>${cb.rate}</td>
+                <td style="font-weight:500;">${cb.stance}</td>
+                <td>${cb.note}</td>
+              </tr>`;
+            }).join('');
+          }
+        }
       }
     })
     .catch(() => {});
