@@ -22,17 +22,21 @@ prompt = """You are a macro analyst. Based on these recent financial headlines, 
 Headlines:
 """ + headline_text
 
-key = os.environ.get('GEMINI_KEY', '').strip()
+key = os.environ.get('GROQ_KEY', '').strip()
 print("Key length check:", len(key))
 
-url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-body = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode()
+url = "https://api.groq.com/openai/v1/chat/completions"
+body = json.dumps({
+    "model": "llama-3.3-70b-versatile",
+    "messages": [{"role": "user", "content": prompt}],
+    "temperature": 0.3
+}).encode()
 req = urllib.request.Request(
     url,
     data=body,
     headers={
         "Content-Type": "application/json",
-        "x-goog-api-key": key
+        "Authorization": "Bearer " + key
     }
 )
 
@@ -40,8 +44,7 @@ analysis = {}
 try:
     with urllib.request.urlopen(req, timeout=30) as resp:
         result = json.loads(resp.read())
-        text = result["candidates"][0]["content"]["parts"][0]["text"]
-        text = text.strip()
+        text = result["choices"][0]["message"]["content"].strip()
         if text.startswith("```"):
             text = text.split("```")[1]
             if text.startswith("json"):
