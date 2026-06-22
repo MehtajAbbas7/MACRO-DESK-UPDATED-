@@ -607,58 +607,8 @@ fetch('data/analysis.json')
         lastBuilt.textContent = d.toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'}) + ' (auto-generated)';
       }
 
-      // Replace drivers grid content
-      if (a.drivers && a.drivers.length) {
-        const driverCards = document.querySelectorAll('.drivers-grid .driver-card');
-        a.drivers.forEach((d, i) => {
-          if (!driverCards[i]) return;
-          const tagClass = d.tag.toLowerCase().includes('bull') ? 'tag-bull' : d.tag.toLowerCase().includes('bear') ? 'tag-bear' : 'tag-mixed';
-          driverCards[i].innerHTML = `
-            <div class="driver-head"><h3>${d.title}</h3><span class="driver-tag ${tagClass}">${d.tag}</span></div>
-            <p>${d.explanation}</p>`;
-        });
-      }
-
-      // Replace central bank scoreboard table
-      if (a.central_banks && a.central_banks.length) {
-        const cbTable = document.querySelectorAll('.calendar-table')[0];
-        if (cbTable) {
-          const tbody = cbTable.querySelector('tbody');
-          if (tbody) {
-            tbody.innerHTML = a.central_banks.map(cb => {
-              const dotClass = cb.stance.toLowerCase().includes('hawk') ? 'impact-high' : cb.stance.toLowerCase().includes('dov') ? 'impact-low' : 'impact-med';
-              return `<tr>
-                <td><span class="impact-dot ${dotClass}"></span></td>
-                <td><b>${cb.bank}</b></td>
-                <td>${cb.rate}</td>
-                <td style="font-weight:500;">${cb.stance}</td>
-                <td>${cb.note}</td>
-              </tr>`;
-            }).join('');
-          }
-        }
-      }
-    })
-    .catch(() => {});
-
-  fetch('data/headlines.json')
-    .then(r => r.json())
-    .then(data => {
-      const items = data.articles || [];
-      const geoKeywords = ['trump','iran','tehran','hormuz','ceasefire','middle east','sanctions','israel','warsh','powell','fed chair','ecb','lagarde','bank of england','bailey','white house','treasury secretary','rate decision','press conference'];
-      const geoItems = items.filter(a => geoKeywords.some(k => (a.title || '').toLowerCase().includes(k)));
-      const geoBox = document.getElementById('geoTracker');
-      if (geoBox) {
-        if (geoItems.length === 0) {
-          geoBox.innerHTML = '<h3>Live statement feed</h3><div class="headline-item" style="color:var(--ink-faint); font-style:italic;">No Trump/Iran headlines in the current pull — check back after the next refresh.</div>';
-        } else {
-          const html = geoItems.slice(0, 6).map(a => `
-            <div class="headline-item">${a.title}
-              <span class="meta">${a.source?.name || ''} · ${new Date(a.publishedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span>
-            </div>`).join('');
-          geoBox.innerHTML = '<h3>Live statement feed</h3>' + html;
-        }
-      }
+      // Drivers and central bank sections intentionally left alone —
+      // kept as Claude-written content, refreshed manually on request.
     })
     .catch(() => {});
 
