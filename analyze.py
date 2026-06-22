@@ -15,19 +15,7 @@ prompt = """You are a macro analyst writing for someone who wants simple, clear 
   "gold_reason": "one simple sentence why",
   "indices_bias": "Bullish or Bearish or Neutral",
   "indices_reason": "one simple sentence why",
-  "lead_story": "2-3 simple sentences on the single biggest driver right now",
-  "drivers": [
-    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"},
-    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"},
-    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"},
-    {"title": "short driver name", "tag": "Bullish or Bearish or Mixed", "explanation": "2 simple sentences explaining this driver and why it moves price"}
-  ],
-  "central_banks": [
-    {"bank": "Federal Reserve", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"},
-    {"bank": "Bank of England", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"},
-    {"bank": "ECB", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"},
-    {"bank": "Bank of Japan", "rate": "current rate or stance", "stance": "Hawkish or Dovish or Neutral", "note": "one simple sentence on why it matters"}
-  ]
+  "lead_story": "2-3 simple sentences on the single biggest driver right now"
 }
 
 Do not include an "updated" field, it will be added separately. Keep every explanation simple, plain-English, no jargon without explaining it.
