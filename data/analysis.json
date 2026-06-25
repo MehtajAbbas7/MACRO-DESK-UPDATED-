@@ -2,9 +2,9 @@
   "usd_bias": "Bullish",
   "usd_reason": "The dollar is rising because investors think US interest rates might go up soon",
   "gold_bias": "Bearish",
-  "gold_reason": "Higher US interest rates could make gold less attractive to investors",
+  "gold_reason": "Higher US interest rates make gold less attractive to investors",
   "indices_bias": "Bearish",
-  "indices_reason": "The stock market is nervous because the Fed might raise interest rates later this year",
-  "lead_story": "The Federal Reserve, led by new chairman Kevin Warsh, has decided to keep interest rates steady for now, but some officials think rates might go up later this year. This decision is making investors a bit nervous, which is affecting the stock market. The strong dollar is also a result of this decision, as higher interest rates in the US make the dollar more attractive to investors.",
-  "updated": "2026-06-25T10:30:04Z"
+  "indices_reason": "The stock market is falling because the Fed's decision on interest rates is uncertain",
+  "lead_story": "The Federal Reserve, led by new Chairman Kevin Warsh, has decided to keep interest rates steady for now, but some officials think they might need to raise rates later this year. This uncertainty is causing investors to be cautious and the dollar to rise. The Fed's decision is being closely watched because it can affect many parts of the economy, including credit cards, mortgages, and savings rates.",
+  "updated": "2026-06-25T19:23:12Z"
 }
