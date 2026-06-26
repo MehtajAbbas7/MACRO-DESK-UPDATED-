@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The dollar is rising because higher US interest rates are expected",
+  "usd_reason": "The dollar is rising because investors think US interest rates might go up soon",
   "gold_bias": "Bearish",
   "gold_reason": "Higher US interest rates make gold less attractive to investors",
   "indices_bias": "Bearish",
-  "indices_reason": "The stock market is falling because the Fed's decision to hold interest rates steady was seen as less supportive of the economy than expected",
-  "lead_story": "The Federal Reserve held interest rates steady, but some officials think rates might go up later this year, which is causing uncertainty in the markets. This decision is the biggest driver of market movements right now. The Fed's new chairman, Kevin Warsh, is also making changes that are being closely watched by investors.",
-  "updated": "2026-06-26T16:33:21Z"
+  "indices_reason": "The stock market is falling because the new Fed chairman's first meeting did not give investors the clarity they wanted",
+  "lead_story": "The US dollar is at a one-year high due to expectations of higher interest rates, the new Fed chairman Kevin Warsh is making changes, and the stock market is reacting to these changes. The Fed decided to keep interest rates steady for now, but some officials think they might need to raise them later this year. This uncertainty is causing investors to be cautious and sell stocks, which is affecting the overall market.",
+  "updated": "2026-06-26T21:57:24Z"
 }
