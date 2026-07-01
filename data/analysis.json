@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Bullish",
-  "usd_reason": "The dollar is rising because investors think US interest rates will go up",
-  "gold_bias": "Bearish",
-  "gold_reason": "Higher US interest rates make gold less attractive to investors",
-  "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting to see how companies perform and what the Fed decides about interest rates",
-  "lead_story": "The US dollar has reached a one-year high because investors think the Federal Reserve will raise interest rates, which makes the dollar more attractive to investors. This decision is based on the Fed's goal to control inflation and support the US economy. As a result, investors are watching the Fed's next moves closely to see how it will affect the market.",
-  "updated": "2026-07-01T10:50:06Z"
+  "usd_bias": "Neutral",
+  "usd_reason": "There are no major economic changes affecting the US dollar right now",
+  "gold_bias": "Bullish",
+  "gold_reason": "The European Central Bank going back to basics might lead to economic uncertainty, which can increase gold prices",
+  "indices_bias": "Bullish",
+  "indices_reason": "The Dow reaching 52,000 and Alphabet's strong Dow debut are positive signs for the stock market",
+  "lead_story": "The Supreme Court has made several important decisions recently, including ruling that Trump cannot fire a Federal Reserve Governor and rejecting his appeal of a $5 million verdict. These decisions are significant for the economy and consumers. The European Central Bank is also making changes, going back to basics, which could impact the global economy.",
+  "updated": "2026-07-01T19:14:09Z"
 }
