@@ -1,10 +1,3 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "The recent Supreme Court rulings and other news have not had a significant impact on the US dollar's value",
-  "gold_bias": "Bullish",
-  "gold_reason": "Gold prices often rise when there is uncertainty, and the recent Supreme Court rulings and other news have created some uncertainty",
-  "indices_bias": "Bullish",
-  "indices_reason": "The Dow reaching 52,000 and Alphabet's strong debut on the Dow are positive signs for the stock market",
-  "lead_story": "The Supreme Court has made several significant rulings, including one that prevents President Trump from firing a Federal Reserve Governor and another that allows a lawsuit against him to proceed. These rulings have created some uncertainty, but the stock market has remained strong, with the Dow reaching 52,000. The European Central Bank's decision to go 'back to basics' is also being closely watched by investors.",
-  "updated": "2026-07-02T16:17:44Z"
+  "error": "Expecting ',' delimiter: line 8 column 309 (char 699)"
 }
