@@ -2,9 +2,9 @@
   "usd_bias": "Neutral",
   "usd_reason": "There are no major economic changes affecting the US dollar right now",
   "gold_bias": "Bullish",
-  "gold_reason": "The European Central Bank going back to basics might lead to economic uncertainty, which can increase gold prices",
+  "gold_reason": "The European Central Bank going back to basics could lead to economic uncertainty, which often helps gold prices",
   "indices_bias": "Bullish",
-  "indices_reason": "The Dow reaching 52,000 and Alphabet's strong Dow debut are positive signs for the stock market",
-  "lead_story": "The Supreme Court has made several important decisions recently, including ruling that Trump cannot fire a Federal Reserve Governor and rejecting his appeal of a $5 million verdict. These decisions are significant for the economy and consumers. The European Central Bank is also making changes, going back to basics, which could impact the global economy.",
-  "updated": "2026-07-01T19:14:09Z"
+  "indices_reason": "The Dow reaching 52,000 and a strong showing from Alphabet on its debut are positive signs for the market",
+  "lead_story": "The European Central Bank is going back to basics, which could lead to changes in economic policy. The Dow has also reached 52,000, showing the market is still strong. Supreme Court rulings are also having a big impact on various companies and the economy.",
+  "updated": "2026-07-02T08:29:38Z"
 }
