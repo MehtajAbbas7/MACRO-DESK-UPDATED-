@@ -1,3 +1,10 @@
 {
-  "error": "Expecting ',' delimiter: line 8 column 309 (char 699)"
+  "usd_bias": "Neutral",
+  "usd_reason": "There are no major economic indicators or news that would significantly impact the US dollar right now",
+  "gold_bias": "Bullish",
+  "gold_reason": "Gold prices often rise when there is uncertainty or instability, and recent Supreme Court rulings and geopolitical tensions could create that environment",
+  "indices_bias": "Bullish",
+  "indices_reason": "The Dow recently hit 52,000 and Alphabet had a strong debut, which are positive signs for the stock market",
+  "lead_story": "The Supreme Court has made several significant rulings recently, including ones related to the Federal Reserve and a verdict against former President Trump. These rulings could have a big impact on the economy and financial markets. The court's decisions are being closely watched by investors and consumers, and could lead to changes in how companies and governments operate.",
+  "updated": "2026-07-03T10:16:00Z"
 }
