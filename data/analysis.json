@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no major news affecting the US dollar right now",
-  "gold_bias": "Neutral",
-  "gold_reason": "Gold prices are not being driven by any significant news or events at the moment",
+  "usd_reason": "There are no major economic changes announced recently that would significantly impact the US dollar",
+  "gold_bias": "Bullish",
+  "gold_reason": "Gold prices often rise when there is uncertainty or instability, and recent Supreme Court rulings and ongoing news about Trump may create some uncertainty",
   "indices_bias": "Bullish",
-  "indices_reason": "The Dow recently hit 52,000 and some major companies like Alphabet are performing well",
-  "lead_story": "The US Supreme Court has made several important rulings recently, including one that stops former President Trump from firing a Federal Reserve Governor and another that allows a lawsuit against Trump to proceed. These rulings are significant because they affect how the government and the economy are run. The court's decisions are being closely watched by investors and consumers.",
-  "updated": "2026-07-03T21:45:38Z"
+  "indices_reason": "The Dow recently reached 52,000 and some major companies like Alphabet had a strong showing, which can indicate a positive trend for the stock market",
+  "lead_story": "The Supreme Court made several significant rulings, including one that prevents Trump from firing a Federal Reserve Governor and another that allows a verdict against Trump to stand. These rulings may create some uncertainty and instability, but the overall impact on the economy is still unclear. The Dow recently reached a high of 52,000, which is a positive sign for the stock market.",
+  "updated": "2026-07-04T09:09:54Z"
 }
