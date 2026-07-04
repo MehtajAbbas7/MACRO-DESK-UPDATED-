@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There are no major economic changes announced recently that would significantly impact the US dollar",
+  "usd_reason": "There are no major economic news or events that significantly impact the US dollar right now",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices often rise when there is uncertainty or instability, and recent Supreme Court rulings and ongoing news about Trump may create some uncertainty",
-  "indices_bias": "Bullish",
-  "indices_reason": "The Dow recently reached 52,000 and some major companies like Alphabet had a strong showing, which can indicate a positive trend for the stock market",
-  "lead_story": "The Supreme Court made several significant rulings, including one that prevents Trump from firing a Federal Reserve Governor and another that allows a verdict against Trump to stand. These rulings may create some uncertainty and instability, but the overall impact on the economy is still unclear. The Dow recently reached a high of 52,000, which is a positive sign for the stock market.",
-  "updated": "2026-07-04T09:09:54Z"
+  "gold_reason": "Uncertainty and tensions, like the Russia strikes mentioned, often make investors buy gold as a safe asset",
+  "indices_bias": "Neutral",
+  "indices_reason": "The stock market is not showing a strong direction, with some companies like Alphabet doing well and others facing challenges",
+  "lead_story": "The US Supreme Court made several important decisions, including ruling that President Trump cannot fire a Federal Reserve Governor and rejecting his appeal of a $5 million verdict, these decisions can affect how the government and economy work. The court's decisions can impact consumer protection and the power of government agencies. Overall, the court's actions are a significant development in US politics and economy.",
+  "updated": "2026-07-04T15:46:24Z"
 }
