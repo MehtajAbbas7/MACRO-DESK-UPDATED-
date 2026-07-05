@@ -54,50 +54,62 @@ except urllib.error.HTTPError as e:
 except Exception as e:
     analysis = {"error": str(e)}
 
-# Save analysis.json as before
 analysis["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 with open('data/analysis.json', 'w') as f:
     json.dump(analysis, f, indent=2)
 
-# Now inject directly into index.html
+def bias_class(bias):
+    b = bias.lower()
+    if 'bull' in b: return 'bull'
+    if 'bear' in b: return 'bear'
+    return 'neutral'
+
+def replace_bias_cell(html, asset_label, bias, reason):
+    # Find the bias-cell containing this asset label and replace dir + sub
+    pattern = (
+        r'(<div class="bias-asset">' + re.escape(asset_label) + r'</div>\s*'
+        r'<div class="bias-dir)[^"]*(">[^<]*)(</div>\s*<div class="bias-sub">)[^<]*(</div>)'
+    )
+    cls = bias_class(bias)
+    replacement = r'\g<1> ' + cls + r'\2'.replace(r'\2', '">' + bias) + r'\3' + reason + r'\4'
+    # Simpler approach - use a function
+    def replacer(m):
+        return (
+            '<div class="bias-asset">' + asset_label + '</div>\n      '
+            '<div class="bias-dir ' + cls + '">' + bias + '</div>\n      '
+            '<div class="bias-sub">' + reason + '</div>'
+        )
+    return re.sub(pattern, replacer, html, count=1)
+
 if "error" not in analysis:
     with open('index.html', 'r') as f:
         html = f.read()
 
-    updated_time = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC (auto-generated)")
+    html = replace_bias_cell(html, 'USD (DXY)', analysis['usd_bias'], analysis['usd_reason'])
+    html = replace_bias_cell(html, 'Gold (XAU/USD)', analysis['gold_bias'], analysis['gold_reason'])
+    html = replace_bias_cell(html, 'S&amp;P 500 / DAX', analysis['indices_bias'], analysis['indices_reason'])
 
-    # Replace USD bias
+    # Replace lead story first paragraph
     html = re.sub(
-        r'(<div class="bias-cell">[\s\S]*?<div class="bias-asset">USD \(DXY\)</div>\s*<div class="bias-dir[^"]*">)[^<]*(</div>\s*<div class="bias-sub">)[^<]*(</div>)',
-        lambda m: m.group(0).split('>')[0] + '>' +
-            f'<div class="bias-asset">USD (DXY)</div>\n      <div class="bias-dir {("bull" if "bull" in analysis["usd_bias"].lower() else "bear" if "bear" in analysis["usd_bias"].lower() else "neutral")}">{analysis["usd_bias"]}</div>\n      <div class="bias-sub">{analysis["usd_reason"]}</div>',
-        html
+        r'(<div class="lead-story">.*?<p>)(.*?)(</p>)',
+        lambda m: m.group(1) + analysis['lead_story'] + m.group(3),
+        html, count=1, flags=re.DOTALL
     )
 
-    # Simpler targeted replacement using unique markers
-    # USD cell
-    html = re.sub(r'(?<=<div class="bias-asset">USD \(DXY\)</div>\n      <div class="bias-dir [^"]*">)[^<]*', analysis['usd_bias'], html)
-    html = re.sub(r'(?<=<div class="bias-asset">USD \(DXY\)</div>\n      <div class="bias-dir [^"]*">[^<]*</div>\n      <div class="bias-sub">)[^<]*', analysis['usd_reason'], html)
-
-    # Gold cell
-    html = re.sub(r'(?<=<div class="bias-asset">Gold \(XAU/USD\)</div>\n      <div class="bias-dir [^"]*">)[^<]*', analysis['gold_bias'], html)
-    html = re.sub(r'(?<=<div class="bias-asset">Gold \(XAU/USD\)</div>\n      <div class="bias-dir [^"]*">[^<]*</div>\n      <div class="bias-sub">)[^<]*', analysis['gold_reason'], html)
-
-    # Indices cell
-    html = re.sub(r'(?<=<div class="bias-asset">S&amp;P 500 / DAX</div>\n      <div class="bias-dir [^"]*">)[^<]*', analysis['indices_bias'], html)
-    html = re.sub(r'(?<=<div class="bias-asset">S&amp;P 500 / DAX</div>\n      <div class="bias-dir [^"]*">[^<]*</div>\n      <div class="bias-sub">)[^<]*', analysis['indices_reason'], html)
-
-    # Lead story - replace first <p> inside .lead-story
-    html = re.sub(r'(<div class="lead-story">[\s\S]*?<p>)[^<]*(</p>)', r'\g<1>' + analysis['lead_story'] + r'\2', html, count=1)
-
-    # Update last built timestamp
-    html = re.sub(r'(<span id="lastBuilt">)[^<]*(</span>)', r'\g<1>' + updated_time + r'\2', html)
+    # Update timestamp
+    updated_time = datetime.now(timezone.utc).strftime("%d %b %Y %H:%M UTC (auto-generated)")
+    html = re.sub(
+        r'(<span id="lastBuilt">)[^<]*(</span>)',
+        r'\g<1>' + updated_time + r'\2',
+        html
+    )
 
     with open('index.html', 'w') as f:
         f.write(html)
 
-    print("Injected analysis into index.html successfully")
+    print("Injected successfully")
 else:
-    print("Skipping HTML injection due to error:", analysis.get("error"))
+    print("Skipping injection, error:", analysis.get("error"))
 
+print("Done:", json.dumps(analysis, indent=2))
 print("Done:", json.dumps(analysis, indent=2))
