@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There are no major economic news that would significantly impact the US dollar right now",
+  "usd_reason": "There are no major economic changes affecting the US dollar right now",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices often rise when there is uncertainty or instability in the global economy, and recent geopolitical tensions and court filings involving former President Trump are contributing to this uncertainty",
-  "indices_bias": "Bullish",
-  "indices_reason": "The Dow recently reached 52,000 and some major companies like Alphabet had a strong showing on its Dow debut, which suggests a positive trend for the stock market",
-  "lead_story": "The European Central Bank is going back to basics, the Dow reached 52,000, and there have been several significant court rulings and settlements, but the biggest driver right now is the overall positive trend in the stock market. The recent Supreme Court rulings on the Fed and FTC are also having an impact on consumers. Additionally, the ECB's decision to go back to basics is being closely watched by investors and economists.",
-  "updated": "2026-07-05T15:56:05Z"
+  "gold_reason": "Gold prices often rise when there is uncertainty, and recent news has been unpredictable",
+  "indices_bias": "Neutral",
+  "indices_reason": "The stock market is waiting to see what happens with interest rates and the economy",
+  "lead_story": "The European Central Bank is making changes to its policies, the US Supreme Court made some important decisions, and the economy is still growing, but there are concerns about the future. The stock market is at a high point, but some people are worried about a potential downturn. The US government is also dealing with some big issues, like student loan forgiveness and the budget.",
+  "updated": "2026-07-05T19:10:35Z"
 }
