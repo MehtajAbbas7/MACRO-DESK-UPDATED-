@@ -2,9 +2,9 @@
   "usd_bias": "Neutral",
   "usd_reason": "There is no major news driving the US dollar in a specific direction right now",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold often does well when there is uncertainty, and recent Supreme Court rulings and international tensions are creating uncertainty",
-  "indices_bias": "Bullish",
-  "indices_reason": "The Dow recently hit 52,000 and some big companies like Alphabet are doing well, which is a good sign for the stock market",
-  "lead_story": "The Supreme Court made some important decisions recently, including one that says President Trump cannot fire a Federal Reserve Governor, and another that affects the Federal Trade Commission, these decisions are creating a lot of discussion and uncertainty. The European Central Bank is also making changes, going back to basics, which could affect the global economy. Overall, these stories are the biggest drivers of the financial markets right now, with many people waiting to see what happens next.",
-  "updated": "2026-07-04T21:16:10Z"
+  "gold_reason": "Gold prices often rise when there is uncertainty or instability in the world, and recent news about Russia and the US is causing some uncertainty",
+  "indices_bias": "Neutral",
+  "indices_reason": "The stock market is not moving strongly in one direction, with some companies doing well and others facing challenges",
+  "lead_story": "The biggest driver in the news right now is the US Supreme Court making important decisions that affect many parts of the economy, including how the Federal Reserve works and how companies can borrow money. These decisions are being closely watched by investors and consumers. The court's rulings could have a big impact on the overall direction of the economy in the coming months.",
+  "updated": "2026-07-05T09:47:48Z"
 }
