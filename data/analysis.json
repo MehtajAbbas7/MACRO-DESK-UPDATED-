@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no major news driving the US dollar in a specific direction right now",
+  "usd_reason": "The recent headlines do not indicate a significant shift in USD value",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold often does well when there is uncertainty, and the many news stories about Trump and the government are creating uncertainty",
+  "gold_reason": "Global economic uncertainty often drives investors to safe-haven assets like gold",
   "indices_bias": "Bullish",
-  "indices_reason": "The stock market is at a high point, with the Dow at 52,000, which suggests that investors are feeling optimistic",
-  "lead_story": "The biggest driver in the news right now is the Supreme Court making decisions that affect the government and economy, including a ruling that President Trump cannot fire a Federal Reserve Governor, and another that blocks the Trump administration's limits on student loan forgiveness. These decisions are creating uncertainty and could have a big impact on the economy. The stock market is still doing well, with the Dow at a high point, but these court decisions could change things.",
-  "updated": "2026-07-05T19:30:15Z"
+  "indices_reason": "The Dow reaching 52,000 suggests a strong market",
+  "lead_story": "The European Central Bank is going back to basics, the Dow has reached 52,000, and Supreme Court rulings are impacting the Fed and consumers, but the biggest macro driver is the ongoing impact of central bank decisions on the global economy, the recent ECB move is a sign of this, and the market is reacting positively to the news, with major companies like Alphabet having a strong showing on their Dow debut",
+  "updated": "2026-07-05T19:59:44Z"
 }
