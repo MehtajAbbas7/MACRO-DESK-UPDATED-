@@ -571,10 +571,31 @@
   tickClock();
   setInterval(tickClock, 1000);
 
-fetch('data/analysis.json')
+fetch('https://raw.githubusercontent.com/MehtajAbbas7/MACRO-DESK-UPDATED-/main/data/analysis.json')
     .then(r => r.json())
     .then(a => {
       if (!a || a.error) return;
+      fetch('https://raw.githubusercontent.com/MehtajAbbas7/MACRO-DESK-UPDATED-/main/data/headlines.json')
+  .then(r => r.json())
+  .then(data => {
+    const keywords = ['fed','rate','inflation','cpi','dollar','gold','ftse','dax','s&p','central bank','ecb','boe','treasury','yield','recession','gdp','geopolit','opec','oil'];
+    const items = (data.articles || []).filter(a => keywords.some(k => (a.title || '').toLowerCase().includes(k)));
+    const list = document.querySelector('.side-card .headline-item')?.parentElement;
+    if (!list || items.length === 0) return;
+    list.innerHTML = '<h3>Live headlines</h3>' + items.slice(0, 8).map(a => `
+      <div class="headline-item">${a.title}
+        <span class="meta">${a.source?.name || ''} · ${new Date(a.publishedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span>
+      </div>`).join('');
+    const geoKeywords = ['trump','iran','tehran','hormuz','ceasefire','middle east','sanctions','israel','warsh','powell','fed chair','ecb','lagarde','bank of england','bailey','white house','rate decision'];
+    const geoItems = (data.articles || []).filter(a => geoKeywords.some(k => (a.title || '').toLowerCase().includes(k)));
+    const geoBox = document.getElementById('geoTracker');
+    if (geoBox) {
+      geoBox.innerHTML = '<h3>Live statement feed</h3>' + (geoItems.length === 0
+        ? '<div class="headline-item" style="color:var(--ink-faint);font-style:italic;">No significant statements in current pull.</div>'
+        : geoItems.slice(0, 6).map(a => `<div class="headline-item">${a.title}<span class="meta">${a.source?.name || ''} · ${new Date(a.publishedAt).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'})}</span></div>`).join(''));
+    }
+  })
+  .catch(() => {});
 
       // Update bias grid
       const biasCells = document.querySelectorAll('.bias-cell');
