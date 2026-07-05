@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There are no major economic changes affecting the US dollar right now",
+  "usd_reason": "There is no major news driving the US dollar in a specific direction right now",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices often rise when there is uncertainty, and recent news has been unpredictable",
-  "indices_bias": "Neutral",
-  "indices_reason": "The stock market is waiting to see what happens with interest rates and the economy",
-  "lead_story": "The European Central Bank is making changes to its policies, the US Supreme Court made some important decisions, and the economy is still growing, but there are concerns about the future. The stock market is at a high point, but some people are worried about a potential downturn. The US government is also dealing with some big issues, like student loan forgiveness and the budget.",
-  "updated": "2026-07-05T19:10:35Z"
+  "gold_reason": "Gold often does well when there is uncertainty, and the many news stories about Trump and the government are creating uncertainty",
+  "indices_bias": "Bullish",
+  "indices_reason": "The stock market is at a high point, with the Dow at 52,000, which suggests that investors are feeling optimistic",
+  "lead_story": "The biggest driver in the news right now is the Supreme Court making decisions that affect the government and economy, including a ruling that President Trump cannot fire a Federal Reserve Governor, and another that blocks the Trump administration's limits on student loan forgiveness. These decisions are creating uncertainty and could have a big impact on the economy. The stock market is still doing well, with the Dow at a high point, but these court decisions could change things.",
+  "updated": "2026-07-05T19:30:15Z"
 }
