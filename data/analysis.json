@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The recent headlines do not indicate a significant shift in USD value",
+  "usd_reason": "The recent headlines do not indicate a significant shift in US dollar trends",
   "gold_bias": "Bullish",
-  "gold_reason": "Global economic uncertainty often drives investors to safe-haven assets like gold",
+  "gold_reason": "Geopolitical tensions and uncertainty often drive investors to safe-haven assets like gold",
   "indices_bias": "Bullish",
-  "indices_reason": "The Dow reaching 52,000 suggests a strong market",
-  "lead_story": "The European Central Bank is going back to basics, the Dow has reached 52,000, and Supreme Court rulings are impacting the Fed and consumers, but the biggest macro driver is the ongoing impact of central bank decisions on the global economy, the recent ECB move is a sign of this, and the market is reacting positively to the news, with major companies like Alphabet having a strong showing on their Dow debut",
-  "updated": "2026-07-05T19:59:44Z"
+  "indices_reason": "The Dow reaching 52,000 suggests a strong market performance",
+  "lead_story": "The European Central Bank is taking a 'back to basics' approach, the Dow has reached 52,000, and the Supreme Court has made significant rulings on the Fed and FTC, all of which are driving market trends. The ECB's move indicates a focus on traditional monetary policy. The Dow's high and the Supreme Court's decisions are also influencing investor sentiment.",
+  "updated": "2026-07-06T12:16:19Z"
 }
