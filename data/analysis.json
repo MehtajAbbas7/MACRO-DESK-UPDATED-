@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The recent headlines do not indicate a significant shift in US dollar trends",
+  "usd_reason": "There is no significant news driving the US dollar in a particular direction",
   "gold_bias": "Bullish",
-  "gold_reason": "Geopolitical tensions and uncertainty often drive investors to safe-haven assets like gold",
+  "gold_reason": "Global economic uncertainty and lack of clear direction in US monetary policy could boost gold prices",
   "indices_bias": "Bullish",
-  "indices_reason": "The Dow reaching 52,000 suggests a strong market performance",
-  "lead_story": "The European Central Bank is taking a 'back to basics' approach, the Dow has reached 52,000, and the Supreme Court has made significant rulings on the Fed and FTC, all of which are driving market trends. The ECB's move indicates a focus on traditional monetary policy. The Dow's high and the Supreme Court's decisions are also influencing investor sentiment.",
-  "updated": "2026-07-06T12:16:19Z"
+  "indices_reason": "The Dow reaching 52,000 and a strong showing from Alphabet on its Dow debut suggest a positive trend for US stock indices",
+  "lead_story": "The European Central Bank is going back to basics, the Dow has reached 52,000, and Supreme Court rulings are having a significant impact on the US economy. The ECB's decision to go back to basics could have a significant impact on global monetary policy. The Dow's high and the Supreme Court's rulings are also driving market trends and investor sentiment.",
+  "updated": "2026-07-06T21:12:38Z"
 }
