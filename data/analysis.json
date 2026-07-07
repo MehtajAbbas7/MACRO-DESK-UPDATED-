@@ -1,4 +1,10 @@
 {
-  "error": "Expecting ',' delimiter: line 8 column 509 (char 962)",
-  "updated": "2026-07-07T11:22:15Z"
+  "usd_bias": "Neutral",
+  "usd_reason": "There are no significant USD-related headlines in the provided list",
+  "gold_bias": "Neutral",
+  "gold_reason": "There are no significant gold-related headlines in the provided list",
+  "indices_bias": "Bullish",
+  "indices_reason": "The Dow is at 52,000, indicating a strong market",
+  "lead_story": "The US Supreme Court has made several significant rulings, including one that prevents President Trump from firing Fed Governor Lisa Cook, and another that blocks the Trump administration's limits on the student loan forgiveness program. These rulings have implications for consumers and the economy. The ECB has also announced a return to basics, which may impact global markets.",
+  "updated": "2026-07-07T19:16:53Z"
 }
