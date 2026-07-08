@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar in a particular direction",
+  "usd_reason": "There is no significant news driving the US dollar in these headlines",
   "gold_bias": "Bullish",
-  "gold_reason": "The lack of significant economic news and ongoing global uncertainty may drive investors to safe-haven assets like gold",
+  "gold_reason": "Inflation concerns from the egg producers price inflation probe may boost gold prices",
   "indices_bias": "Bullish",
-  "indices_reason": "The Dow reaching 52,000 and a strong showing from Alphabet on its Dow debut suggest a positive trend for US indices",
-  "lead_story": "The European Central Bank is taking a 'back to basics' approach, the Dow has reached 52,000, and there have been several significant Supreme Court rulings, including one that affects the Federal Reserve, all of which are driving market trends. The ECB's approach may have a significant impact on European markets. The Supreme Court rulings may lead to changes in consumer protection and financial regulation.",
-  "updated": "2026-07-08T00:16:01Z"
+  "indices_reason": "The Dow reaching 52,000 and a strong showing from Alphabet on its Dow debut are positive indicators for the market",
+  "lead_story": "The US Supreme Court has made several significant rulings, including blocking the Trump administration's limits on student loan forgiveness and ruling that Trump cannot fire Fed Governor Lisa Cook, which may have implications for the economy and financial markets. The ECB has also announced a return to basics, which could impact European markets. Overall, these developments suggest a complex and potentially volatile macro environment.",
+  "updated": "2026-07-08T10:37:49Z"
 }
