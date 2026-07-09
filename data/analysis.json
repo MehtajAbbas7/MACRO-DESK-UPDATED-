@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar in these headlines",
+  "usd_reason": "There is no significant news affecting the US dollar's value",
   "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold prices in these headlines",
+  "gold_reason": "There is no significant news affecting gold's value",
   "indices_bias": "Bullish",
-  "indices_reason": "The Dow reaching 52,000 suggests a positive trend for stock indices",
-  "lead_story": "The European Central Bank is taking a 'back to basics' approach, the Dow has reached 52,000, and there are significant developments in US politics and law, but none of these stories are having a major impact on the overall macro outlook right now, the ECB's move is the most significant economic news. The US political stories are not having a major market impact. The ECB's decision is being watched by investors for its potential impact on global markets.",
-  "updated": "2026-07-08T21:48:53Z"
+  "indices_reason": "The Dow is at 52,000, indicating a strong market",
+  "lead_story": "The US economy is showing signs of strength with the Dow at 52,000, but regulatory and legal issues are ongoing with major implications, including the Trump administration's limits on student loan forgiveness being blocked and the Supreme Court's upcoming decisions.",
+  "updated": "2026-07-09T11:24:51Z"
 }
