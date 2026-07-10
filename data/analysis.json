@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar in these headlines",
-  "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold prices in these headlines",
-  "indices_bias": "Bullish",
-  "indices_reason": "The US regulatory green light for OpenAI's GPT-5.6 rollout could boost tech stocks",
-  "lead_story": "The US regulatory green light for OpenAI's GPT-5.6 rollout is a significant development, as it could boost the tech sector and have broader implications for the economy. This news could lead to increased investment in AI and related technologies. The rollout of GPT-5.6 is expected to have a major impact on various industries, from healthcare to finance.",
-  "updated": "2026-07-09T18:27:01Z"
+  "usd_reason": "There are no significant economic or monetary policy headlines to sway the US dollar",
+  "gold_bias": "Bullish",
+  "gold_reason": "Geopolitical tensions and lack of significant economic data may drive investors to safe-haven assets like gold",
+  "indices_bias": "Neutral",
+  "indices_reason": "The absence of major market-moving news leaves indices without a clear direction",
+  "lead_story": "The US economy is currently being driven by the intersection of technology and politics, with OpenAI securing a regulatory green light for its GPT-5.6 rollout, while the Trump administration's policies and actions continue to make headlines, the overall macroeconomic environment remains relatively stable, with no single major driver dominating the news cycle, and geopolitical tensions simmering in the background",
+  "updated": "2026-07-10T08:52:27Z"
 }
