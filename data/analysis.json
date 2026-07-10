@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There are no major economic or financial headlines driving the US dollar's value",
+  "usd_reason": "There are no significant economic or financial headlines affecting the US dollar",
   "gold_bias": "Neutral",
-  "gold_reason": "Lack of significant news on inflation, interest rates, or major economic trends affecting gold prices",
-  "indices_bias": "Bullish",
-  "indices_reason": "OpenAI securing regulatory approval for its GPT-5.6 rollout could boost tech stocks and the overall market",
-  "lead_story": "OpenAI has secured US regulatory approval for its GPT-5.6 rollout, which could have significant implications for the tech industry and the broader market. This development could lead to increased investment and growth in the sector. The approval is seen as a major win for OpenAI and could pave the way for further advancements in artificial intelligence.",
-  "updated": "2026-07-10T16:37:54Z"
+  "gold_reason": "There are no major developments impacting gold prices",
+  "indices_bias": "Neutral",
+  "indices_reason": "The news is mostly focused on politics and individual companies rather than broad market trends",
+  "lead_story": "The biggest macro driver right now is the US government's actions on student loan forgiveness, with a recent court ruling blocking limits on the program. This could have implications for the broader economy and consumer spending. The development is being closely watched by borrowers and policymakers alike.",
+  "updated": "2026-07-10T21:38:47Z"
 }
