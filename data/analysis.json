@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There are no significant economic or monetary policy changes in the recent headlines to sway the US dollar",
-  "gold_bias": "Bullish",
-  "gold_reason": "Geopolitical tensions and uncertainty, such as Russia strikes, can increase demand for safe-haven assets like gold",
-  "indices_bias": "Bearish",
-  "indices_reason": "Global economic uncertainty and rising tensions, such as the US-China cyber risk concerns, can negatively impact stock market indices",
-  "lead_story": "The US-China relationship is a significant macro driver right now, with concerns over cyber risks and export controls. The Trump administration's easing of export controls for the UAE may have implications for global trade. Meanwhile, the US is also accusing a Chinese lidar maker of being a cyber risk, which could escalate tensions between the two nations.",
-  "updated": "2026-07-11T20:31:10Z"
+  "usd_reason": "There is no significant news driving the US dollar in these headlines",
+  "gold_bias": "Neutral",
+  "gold_reason": "There is no significant news driving gold prices in these headlines",
+  "indices_bias": "Bullish",
+  "indices_reason": "The rollout of new AI technology, such as OpenAI's GPT-5.6, could boost tech stocks and overall market indices",
+  "lead_story": "The US is seeing significant developments in AI technology, with OpenAI securing regulatory approval for its GPT-5.6 rollout. This could have major implications for the tech industry and the broader economy. The White House is also taking notice of these advancements, which could lead to increased investment and growth in the sector.",
+  "updated": "2026-07-11T23:39:05Z"
 }
