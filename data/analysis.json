@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "Lack of significant economic news is keeping the USD stable",
+  "usd_reason": "There are no significant economic or monetary policy changes in the recent headlines to sway the US dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "Geopolitical tensions and uncertainty are driving investors to safe-haven assets",
+  "gold_reason": "Geopolitical tensions and uncertainty, such as Russia strikes, can increase demand for safe-haven assets like gold",
   "indices_bias": "Bearish",
-  "indices_reason": "Global economic uncertainty and rising tensions are weighing on market sentiment",
-  "lead_story": "The US economy is facing uncertainty due to geopolitical tensions and regulatory developments, with the recent block on the Trump administration's limits on student loan forgiveness program adding to the mix. The rollout of OpenAI's GPT-5.6 has also been approved, which could have significant implications for the tech industry. Overall, these developments are contributing to a complex and volatile macro environment.",
-  "updated": "2026-07-11T15:33:07Z"
+  "indices_reason": "Global economic uncertainty and rising tensions, such as the US-China cyber risk concerns, can negatively impact stock market indices",
+  "lead_story": "The US-China relationship is a significant macro driver right now, with concerns over cyber risks and export controls. The Trump administration's easing of export controls for the UAE may have implications for global trade. Meanwhile, the US is also accusing a Chinese lidar maker of being a cyber risk, which could escalate tensions between the two nations.",
+  "updated": "2026-07-11T20:31:10Z"
 }
