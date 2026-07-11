@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "Lack of significant economic news is keeping the US dollar stable",
+  "usd_reason": "Lack of significant economic news is keeping the USD stable",
   "gold_bias": "Bullish",
-  "gold_reason": "Geopolitical tensions and uncertainty are driving investors to safe-haven assets like gold",
+  "gold_reason": "Geopolitical tensions and uncertainty are driving investors to safe-haven assets",
   "indices_bias": "Bearish",
-  "indices_reason": "Global economic uncertainty and rising tensions are weighing on investor sentiment",
-  "lead_story": "The US economy is facing uncertainty due to geopolitical tensions and regulatory developments, with the recent block on the Trump administration's limits on student loan forgiveness program adding to the mix. The rollout of OpenAI's GPT-5.6 has also been approved, which could have significant implications for the tech industry. Overall, these factors are contributing to a complex and volatile macro environment.",
-  "updated": "2026-07-11T11:39:24Z"
+  "indices_reason": "Global economic uncertainty and rising tensions are weighing on market sentiment",
+  "lead_story": "The US economy is facing uncertainty due to geopolitical tensions and regulatory developments, with the recent block on the Trump administration's limits on student loan forgiveness program adding to the mix. The rollout of OpenAI's GPT-5.6 has also been approved, which could have significant implications for the tech industry. Overall, these developments are contributing to a complex and volatile macro environment.",
+  "updated": "2026-07-11T15:33:07Z"
 }
