@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar in these headlines",
-  "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold prices in these headlines",
-  "indices_bias": "Bullish",
-  "indices_reason": "The rollout of new AI technology, such as OpenAI's GPT-5.6, could boost tech stocks and indices",
-  "lead_story": "The biggest macro driver right now is the increasing adoption of AI technology, with OpenAI securing a US regulatory green light for its GPT-5.6 rollout. This could have significant implications for the tech industry and the broader economy. The White House is also taking notice of OpenAI, which could lead to further developments in the space.",
-  "updated": "2026-07-11T07:22:23Z"
+  "usd_reason": "Lack of significant economic news is keeping the US dollar stable",
+  "gold_bias": "Bullish",
+  "gold_reason": "Geopolitical tensions and uncertainty are driving investors to safe-haven assets like gold",
+  "indices_bias": "Bearish",
+  "indices_reason": "Global economic uncertainty and rising tensions are weighing on investor sentiment",
+  "lead_story": "The US economy is facing uncertainty due to geopolitical tensions and regulatory developments, with the recent block on the Trump administration's limits on student loan forgiveness program adding to the mix. The rollout of OpenAI's GPT-5.6 has also been approved, which could have significant implications for the tech industry. Overall, these factors are contributing to a complex and volatile macro environment.",
+  "updated": "2026-07-11T11:39:24Z"
 }
