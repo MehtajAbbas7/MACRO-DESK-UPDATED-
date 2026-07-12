@@ -1,10 +1,4 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar in these headlines",
-  "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold in these headlines",
-  "indices_bias": "Bullish",
-  "indices_reason": "The rollout of OpenAI's GPT-5.6 has been given a US regulatory green light, which could boost tech stocks",
-  "lead_story": "The US regulatory green light for OpenAI's GPT-5.6 rollout is a significant development, as it could lead to increased adoption of AI technology in various industries. This could have a positive impact on the US economy and stock market. The White House's interest in OpenAI also suggests that the administration is supportive of the tech industry, which could lead to further growth and investment.",
-  "updated": "2026-07-12T12:08:32Z"
+  "error": "Expecting ',' delimiter: line 8 column 394 (char 787)",
+  "updated": "2026-07-12T18:10:02Z"
 }
