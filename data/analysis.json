@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar in these headlines",
-  "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold prices in these headlines",
-  "indices_bias": "Bullish",
-  "indices_reason": "The rollout of new AI technology, such as OpenAI's GPT-5.6, could boost tech stocks and overall market indices",
-  "lead_story": "The US is seeing significant developments in AI technology, with OpenAI securing regulatory approval for its GPT-5.6 rollout. This could have major implications for the tech industry and the broader economy. The White House is also taking notice of these advancements, which could lead to increased investment and growth in the sector.",
-  "updated": "2026-07-11T23:39:05Z"
+  "usd_reason": "Lack of significant economic news is keeping the USD stable",
+  "gold_bias": "Bullish",
+  "gold_reason": "Geopolitical tensions and uncertainty are driving investors to safe-haven assets",
+  "indices_bias": "Bearish",
+  "indices_reason": "Rising concerns about global economic growth are weighing on market sentiment",
+  "lead_story": "The US economy is facing uncertainty due to geopolitical tensions and mixed signals from the Fed, the recent news about OpenAI securing regulatory approval for its GPT-5.6 rollout is also gaining attention, and the ongoing Russia-Ukraine conflict is affecting global markets",
+  "updated": "2026-07-12T07:50:41Z"
 }
