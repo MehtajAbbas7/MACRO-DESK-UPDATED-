@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "Lack of significant economic news is keeping the USD stable",
-  "gold_bias": "Bullish",
-  "gold_reason": "Geopolitical tensions and uncertainty are driving investors to safe-haven assets",
-  "indices_bias": "Bearish",
-  "indices_reason": "Rising concerns over global economic instability are weighing on market sentiment",
-  "lead_story": "The US economy is facing uncertainty due to geopolitical tensions and regulatory changes. The recent news on AI development and its potential impact on the job market is also a concern. The Fed's task force on AI may bring more clarity on the issue in the coming days",
-  "updated": "2026-07-13T11:42:37Z"
+  "usd_reason": "There are no significant US dollar-related headlines in the provided news stories",
+  "gold_bias": "Neutral",
+  "gold_reason": "There are no significant gold-related headlines in the provided news stories",
+  "indices_bias": "Neutral",
+  "indices_reason": "The provided news stories do not indicate any significant market-moving trends for indices",
+  "lead_story": "The biggest macro driver right now appears to be the intersection of politics and technology, with stories about OpenAI's regulatory approval and Trump's various legal battles dominating the headlines. The US is also seeing significant developments in the tech sector, with Nvidia ties to a Chinese lidar maker raising cyber risk concerns. Overall, the current macro environment is being shaped by these emerging tech and political trends.",
+  "updated": "2026-07-13T18:19:22Z"
 }
