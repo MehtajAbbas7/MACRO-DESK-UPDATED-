@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There are no significant US dollar-related headlines in the provided news stories",
+  "usd_reason": "There are no significant headlines directly impacting the US dollar",
   "gold_bias": "Neutral",
-  "gold_reason": "There are no significant gold-related headlines in the provided news stories",
-  "indices_bias": "Neutral",
-  "indices_reason": "The provided news stories do not indicate any significant market-moving trends for indices",
-  "lead_story": "The biggest macro driver right now appears to be the intersection of politics and technology, with stories about OpenAI's regulatory approval and Trump's various legal battles dominating the headlines. The US is also seeing significant developments in the tech sector, with Nvidia ties to a Chinese lidar maker raising cyber risk concerns. Overall, the current macro environment is being shaped by these emerging tech and political trends.",
-  "updated": "2026-07-13T18:19:22Z"
+  "gold_reason": "There are no significant headlines directly impacting gold prices",
+  "indices_bias": "Bullish",
+  "indices_reason": "The rollout of OpenAI's GPT-5.6 and its potential impact on the tech sector could boost market indices",
+  "lead_story": "The biggest macro driver right now is the potential impact of AI on the economy, with OpenAI securing regulatory approval for its GPT-5.6 rollout. This could lead to significant advancements in the tech sector and have far-reaching implications for various industries. The White House's interest in OpenAI's technology also highlights the growing importance of AI in shaping the country's economic future.",
+  "updated": "2026-07-13T23:38:52Z"
 }
