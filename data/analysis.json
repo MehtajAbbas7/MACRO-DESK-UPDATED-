@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar's value",
-  "gold_bias": "Neutral",
-  "gold_reason": "No major economic or geopolitical news is impacting gold prices",
-  "indices_bias": "Bullish",
-  "indices_reason": "Artificial intelligence advancements and tech investments are driving market optimism",
-  "lead_story": "The US is seeing significant developments in artificial intelligence, with OpenAI securing regulatory approval for its GPT-5.6 rollout and the New Fed task force embracing AI, which could drive economic growth and market confidence. The White House is also taking notice of AI's potential, with OpenAI reportedly wooing the administration. However, geopolitical tensions, such as Russia's recent strikes, continue to pose a risk to global stability.",
-  "updated": "2026-07-14T12:55:26Z"
+  "usd_bias": "Bullish",
+  "usd_reason": "The odds of a July rate hike from the Fed are rising, which typically strengthens the US dollar",
+  "gold_bias": "Bearish",
+  "gold_reason": "A potential rate hike would increase the opportunity cost of holding gold, making it less attractive",
+  "indices_bias": "Neutral",
+  "indices_reason": "The recent news does not provide a clear indication of the direction of the indices",
+  "lead_story": "The Federal Reserve is considering a July rate hike, which could have significant implications for the US economy and financial markets. This decision is being closely watched by investors and could impact the direction of the US dollar and other assets. The rate hike would be a sign that the Fed is taking a more aggressive stance on inflation.",
+  "updated": "2026-07-14T18:48:38Z"
 }
