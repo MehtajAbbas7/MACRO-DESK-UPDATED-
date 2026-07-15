@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The odds of a July rate hike from the Fed are rising",
+  "usd_reason": "The odds of a July rate hike from the Fed are rising, which could strengthen the US dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "A potential rate hike would likely strengthen the US dollar and decrease gold prices",
+  "gold_reason": "A potential rate hike would likely increase the opportunity cost of holding gold, making it less attractive",
   "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for the Fed's decision on interest rates",
-  "lead_story": "The Federal Reserve is considering a July rate hike, which could impact the US dollar and the overall economy. This decision is being closely watched by investors and could lead to increased market volatility. The rate hike would be a sign that the Fed is taking steps to control inflation.",
-  "updated": "2026-07-14T23:38:13Z"
+  "indices_reason": "The recent news does not provide a clear indication of the direction of the stock market",
+  "lead_story": "The Federal Reserve is considering a July rate hike, which could have significant implications for the US economy and financial markets. This decision is being driven by concerns about inflation and the need to slow down the economy. The potential rate hike is currently the biggest macro driver in the market.",
+  "updated": "2026-07-15T07:30:02Z"
 }
