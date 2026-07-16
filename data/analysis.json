@@ -1,4 +1,10 @@
 {
-  "error": "Expecting ',' delimiter: line 8 column 433 (char 922)",
-  "updated": "2026-07-16T07:37:26Z"
+  "usd_bias": "Bullish",
+  "usd_reason": "The possibility of a July rate hike from the Fed is rising, which would strengthen the dollar",
+  "gold_bias": "Bearish",
+  "gold_reason": "Rising interest rates typically make gold less attractive to investors",
+  "indices_bias": "Neutral",
+  "indices_reason": "Inflation slowing to 3.5% in June provides some relief to the market, but the possibility of a rate hike keeps it cautious",
+  "lead_story": "The biggest macro driver right now is the potential for a July rate hike from the Fed, which is becoming more likely and could impact the dollar and gold prices. This decision will be influenced by the recent inflation data, which showed a slowdown to 3.5% in June. The Fed's actions will be closely watched by investors and could have significant effects on the market.",
+  "updated": "2026-07-16T15:19:31Z"
 }
