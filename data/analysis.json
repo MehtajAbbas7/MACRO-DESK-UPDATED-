@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Bullish",
-  "usd_reason": "The slowing inflation rate and potential July rate hike from the Fed may strengthen the US dollar",
-  "gold_bias": "Bearish",
-  "gold_reason": "Slowing inflation reduces the need for a safe-haven asset like gold",
-  "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for the Fed's decision on a July rate hike and its impact on the economy",
-  "lead_story": "Inflation slowed to 3.5% in June, giving Americans a break from high gasoline prices. The Federal Reserve is considering a July rate hike, which could impact the US economy. The Fed's decision will be a key driver of market trends in the coming weeks.",
-  "updated": "2026-07-17T20:38:57Z"
+  "usd_bias": "Neutral",
+  "usd_reason": "The recent inflation slowdown and potential July rate hike have balanced out the USD's outlook",
+  "gold_bias": "Bullish",
+  "gold_reason": "Slowing inflation has not fallen enough to completely rule out further rate hikes, which could support gold prices",
+  "indices_bias": "Bullish",
+  "indices_reason": "The recent slowdown in inflation has given Americans a break from high prices, which could boost consumer spending and support indices",
+  "lead_story": "Inflation slowed to 3.5% in June, giving Americans a break from high gasoline prices. This slowdown has led to rising odds of a July rate hike from the Fed. The inflation credibility test for Fed Chairman Warsh is a key macro driver right now.",
+  "updated": "2026-07-17T23:38:12Z"
 }
