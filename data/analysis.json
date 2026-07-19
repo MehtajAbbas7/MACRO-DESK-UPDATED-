@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The slowing inflation rate and potential July rate hike from the Fed may strengthen the US dollar",
+  "usd_reason": "The slowing inflation rate and potential July rate hike from the Fed may lead to increased confidence in the US economy and a stronger dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Slowing inflation reduces the need for a safe-haven asset like gold",
-  "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for the Fed's decision on interest rates and its impact on the economy",
-  "lead_story": "Inflation slowed to 3.5% in June, and the odds of a July rate hike from the Fed are rising, which may impact the US dollar and the overall economy. The Fed Chairman is facing an inflation credibility test after Congress hearings. The potential rate hike is the biggest macro driver right now, as it may influence investor decisions and market trends.",
-  "updated": "2026-07-18T23:37:54Z"
+  "gold_reason": "The slowing inflation rate reduces the need for a safe-haven asset like gold",
+  "indices_bias": "Bullish",
+  "indices_reason": "The slowing inflation rate and potential July rate hike from the Fed may lead to increased confidence in the US economy and higher stock prices",
+  "lead_story": "The US inflation rate slowed to 3.5% in June, driven by lower gasoline prices, and the Federal Reserve is considering a July rate hike, which may impact the US economy and financial markets. The slowing inflation rate may lead to increased confidence in the US economy. The potential rate hike may also affect the value of the US dollar and gold.",
+  "updated": "2026-07-19T07:51:24Z"
 }
