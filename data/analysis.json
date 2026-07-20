@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "The Fed's potential rate hike in July is balanced by slowing inflation, keeping the USD stable",
-  "gold_bias": "Bullish",
-  "gold_reason": "Slowing inflation and potential rate hikes make gold a more attractive safe-haven asset",
-  "indices_bias": "Bullish",
-  "indices_reason": "Lower gasoline prices and slowing inflation are boosting consumer spending and market sentiment",
-  "lead_story": "Inflation slowed to 3.5% in June, driven by lower gasoline prices, and the Fed is considering a July rate hike. This shift in inflation and potential monetary policy changes are driving market sentiment. The odds of a rate hike are rising, but the impact on the economy and markets remains uncertain.",
-  "updated": "2026-07-19T18:09:35Z"
+  "usd_bias": "Bullish",
+  "usd_reason": "The odds of a July rate hike from the Fed are rising, which typically strengthens the US dollar",
+  "gold_bias": "Bearish",
+  "gold_reason": "Inflation slowing to 3.5% in June reduces the need for a safe-haven asset like gold",
+  "indices_bias": "Neutral",
+  "indices_reason": "The market is waiting for the Fed's decision on interest rates and its impact on the economy",
+  "lead_story": "The Federal Reserve is considering a July rate hike, which has significant implications for the US economy and financial markets. The decision will be influenced by the latest inflation data, which showed a slowdown to 3.5% in June. The rate hike, if implemented, is expected to impact the US dollar, gold, and stock market indices.",
+  "updated": "2026-07-20T00:16:11Z"
 }
