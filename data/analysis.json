@@ -2,9 +2,9 @@
   "usd_bias": "Bullish",
   "usd_reason": "The odds of a July rate hike from the Fed are rising, which typically strengthens the US dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Inflation slowing to 3.5% reduces the need for a hedge against inflation, which is typically gold",
+  "gold_reason": "Inflation slowing to 3.5% in June reduces the need for a safe-haven asset like gold",
   "indices_bias": "Neutral",
-  "indices_reason": "The mixed economic news and rising rate hike odds create uncertainty for the stock market",
-  "lead_story": "The biggest macro driver right now is the potential for a July rate hike from the Fed, with odds rising after inflation slowed to 3.5% in June. This has significant implications for the US dollar and the overall economy. The Fed's actions will be closely watched as they navigate the delicate balance between controlling inflation and avoiding recession.",
-  "updated": "2026-07-21T05:45:44Z"
+  "indices_reason": "The market is waiting for the outcome of the Fed's decision on interest rates and its impact on the economy",
+  "lead_story": "The biggest macro driver right now is the Federal Reserve's potential interest rate hike in July, with odds rising after inflation slowed to 3.5% in June. This decision will have a significant impact on the US dollar and the overall economy. The Fed Chairman is also facing an inflation credibility test after Congress hearings, which adds to the uncertainty and anticipation surrounding the rate hike decision.",
+  "updated": "2026-07-21T08:20:23Z"
 }
