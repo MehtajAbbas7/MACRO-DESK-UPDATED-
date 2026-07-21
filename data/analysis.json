@@ -1,4 +1,10 @@
 {
-  "error": "Expecting ',' delimiter: line 8 column 309 (char 707)",
-  "updated": "2026-07-21T11:03:58Z"
+  "usd_bias": "Bullish",
+  "usd_reason": "The odds of a July rate hike from the Fed are rising, which typically strengthens the dollar",
+  "gold_bias": "Bearish",
+  "gold_reason": "Inflation slowed to 3.5% in June, reducing the need for a safe-haven asset like gold",
+  "indices_bias": "Neutral",
+  "indices_reason": "The market is waiting for the Fed's decision on interest rates and the impact of inflation on the economy",
+  "lead_story": "Inflation slowed to 3.5% in June, giving Americans a break from high gasoline prices, but the Fed is still considering a July rate hike, which could impact the economy and financial markets, and the odds of a rate hike are rising",
+  "updated": "2026-07-21T13:28:51Z"
 }
