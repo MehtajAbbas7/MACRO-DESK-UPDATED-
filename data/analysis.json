@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The Fed is in the spotlight for interest-rate decisions, which could strengthen the dollar",
+  "usd_reason": "The Fed is in the spotlight for potential interest rate changes, which could strengthen the dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Rising interest rates typically make gold less attractive as an investment",
+  "gold_reason": "Inflation slowing to 3.5% reduces the need for a safe-haven asset like gold",
   "indices_bias": "Neutral",
-  "indices_reason": "The recent inflation slowdown and interest-rate uncertainty are balancing out market sentiment",
-  "lead_story": "The Fed's interest-rate decisions are in focus due to high oil prices and inflation concerns. The recent inflation slowdown to 3.5% in June may give the Fed room to maneuver. However, Fed Chairman Warsh faces an inflation credibility test after Congress hearings, which will be closely watched by markets.",
-  "updated": "2026-07-27T16:54:54Z"
+  "indices_reason": "Earnings reports and economic data are mixed, with no clear direction for the market",
+  "lead_story": "The Federal Reserve is facing an inflation credibility test after Congress hearings, with Chairman Warsh's communication being closely watched. The recent slowdown in inflation to 3.5% may give the Fed room to maneuver on interest rates. This will be a key driver of market sentiment in the coming weeks.",
+  "updated": "2026-07-27T19:20:15Z"
 }
