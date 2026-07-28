@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The Fed is in the spotlight for potential interest rate changes, which could strengthen the dollar",
+  "usd_reason": "Treasury yields are near January 2025 highs, indicating a strong dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Inflation slowing to 3.5% reduces the need for a safe-haven asset like gold",
+  "gold_reason": "Rising interest rates typically make gold less attractive as an investment",
   "indices_bias": "Neutral",
-  "indices_reason": "Treasury yields are hovering around highs, which could impact stock market performance",
-  "lead_story": "The Fed is facing an inflation credibility test after Congress hearings, with Chairman Warsh's communication being closely watched. The recent slowdown in inflation to 3.5% may give the Fed room to maneuver on interest rates. This could have significant implications for the US economy and financial markets.",
-  "updated": "2026-07-27T22:02:02Z"
+  "indices_reason": "Oil prices are volatile and the impact on the stock market is uncertain",
+  "lead_story": "The Federal Reserve is in the spotlight as interest rates are being closely watched, with Treasury yields near January 2025 highs and oil prices hovering around $100, putting pressure on the Fed to make a decision on interest rates. The Fed's new chairman, Kevin Warsh, is being closely watched for signals on future rate hikes. The outcome of the interest rate decision will have a significant impact on the overall economy and financial markets.",
+  "updated": "2026-07-28T02:06:05Z"
 }
