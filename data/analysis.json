@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Bullish",
-  "usd_reason": "Treasury yields are hovering around January 2025 highs, indicating a strong US economy",
-  "gold_bias": "Bearish",
-  "gold_reason": "Oil prices are sliding, which could lead to lower inflation and reduced demand for gold",
-  "indices_bias": "Neutral",
-  "indices_reason": "The stock market is waiting for the Fed's interest-rate decision, which will determine its next move",
-  "lead_story": "The Fed's interest-rate decision is the biggest macro driver right now, with Chairman Warsh facing an inflation credibility test after Congress hearings. The decision will impact Treasury yields and the US dollar. The Fed's communication strategy is also being closely watched by Wall Street, with the 'WarshGPT' era of communication being closely analyzed.",
-  "updated": "2026-07-28T08:26:32Z"
+  "usd_bias": "Neutral",
+  "usd_reason": "The easing of Middle East tensions has reduced the need for safe-haven assets like the US dollar",
+  "gold_bias": "Bullish",
+  "gold_reason": "The pause in the West Asia crisis has reduced inflation risk, making gold a more attractive investment",
+  "indices_bias": "Bullish",
+  "indices_reason": "The decline in oil prices and easing of Middle East tensions have improved investor sentiment",
+  "lead_story": "The easing of Middle East tensions has led to a decline in oil prices and a decrease in Treasury yields, which has improved investor sentiment and boosted stock markets. The Federal Reserve is now under pressure to adjust interest rates in response to the changing economic landscape. As a result, Fed Chairman Warsh is facing an inflation credibility test after recent Congress hearings.",
+  "updated": "2026-07-28T11:13:18Z"
 }
