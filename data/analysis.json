@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The easing of Middle East tensions has reduced the need for a safe-haven currency like the US dollar",
+  "usd_reason": "The easing of Middle East tensions has reduced the safe-haven demand for the US dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "A pause in the West Asia crisis has curbed inflation risk, making gold a more attractive investment",
+  "gold_reason": "Gold prices are rising as a pause in the West Asia crisis has reduced inflation risk",
   "indices_bias": "Bullish",
-  "indices_reason": "Easing tensions and lower oil prices are reducing uncertainty and supporting stock market gains",
-  "lead_story": "The easing of Middle East tensions is the biggest macro driver right now, with oil prices sliding and Treasury yields retreating as a result. This reduction in uncertainty is supporting stock market gains and making gold a more attractive investment. The Federal Reserve's upcoming actions, potentially influenced by new Chair Kevin Warsh, will also be closely watched.",
-  "updated": "2026-07-28T19:16:34Z"
+  "indices_reason": "Easing tensions in the Middle East and falling oil prices are supporting stock market gains",
+  "lead_story": "The easing of Middle East tensions is the biggest macro driver right now, with oil prices sliding 5% and Treasury yields tumbling as a result. This reduction in geopolitical risk is supporting stock markets and reducing the safe-haven demand for the US dollar. As a result, investors are shifting their focus to the upcoming Federal Reserve meeting and the potential for interest rate changes.",
+  "updated": "2026-07-28T21:59:25Z"
 }
