@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The easing of Middle East tensions has reduced the need for safe-haven assets like the US dollar",
+  "usd_reason": "Treasury yields are tumbling as Middle East tensions ease, which has a neutral effect on the US dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "The pause in the West Asia crisis has reduced inflation risk, making gold a more attractive investment",
+  "gold_reason": "Gold is climbing as a pause in West Asia crisis curbs inflation risk, making it a more attractive safe-haven asset",
   "indices_bias": "Bullish",
-  "indices_reason": "The decline in oil prices and easing of Middle East tensions have improved investor sentiment",
-  "lead_story": "The easing of Middle East tensions has led to a decline in oil prices and a decrease in Treasury yields, which has improved investor sentiment and boosted stock markets. The Federal Reserve is now under pressure to adjust interest rates in response to the changing economic landscape. As a result, Fed Chairman Warsh is facing an inflation credibility test after recent Congress hearings.",
-  "updated": "2026-07-28T11:13:18Z"
+  "indices_reason": "Easing Middle East tensions and falling oil prices are reducing inflation risk, which is positive for stock market indices",
+  "lead_story": "The easing of Middle East tensions is the biggest macro driver right now, as it has led to a decline in oil prices and Treasury yields. This reduction in inflation risk is boosting gold and stock market indices. The pause in conflict is also reducing the likelihood of interest rate hikes, which is having a neutral effect on the US dollar.",
+  "updated": "2026-07-28T13:54:43Z"
 }
