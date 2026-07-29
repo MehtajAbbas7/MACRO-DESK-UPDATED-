@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The easing of Middle East tensions has reduced the need for a safe-haven currency like the US dollar",
+  "usd_reason": "The upcoming Fed rates decision is causing uncertainty and keeping the USD stable",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices are rising as investors seek a hedge against potential future inflation and uncertainty",
+  "gold_reason": "Gold prices are rising due to easing Middle East tensions and reduced inflation risk",
   "indices_bias": "Bullish",
-  "indices_reason": "The easing of Middle East tensions and potential for lower interest rates are boosting investor sentiment and stock prices",
-  "lead_story": "The easing of Middle East tensions has reduced inflation risk and led to a decline in oil prices, which in turn has put pressure on the Fed to consider lower interest rates. The nomination of Kevin Warsh as Fed Chair has also sparked debate about the future of monetary policy. As a result, investors are closely watching the Fed's next moves and their potential impact on the economy.",
-  "updated": "2026-07-29T08:32:42Z"
+  "indices_reason": "Easing tensions and lower oil prices are boosting investor sentiment and driving indices higher",
+  "lead_story": "The Fed's upcoming rates decision is the biggest macro driver right now, with investors watching for signs of a pause in rate hikes. The decision will be influenced by easing Middle East tensions and falling oil prices. A rate hike pause could boost stocks and gold, while keeping the USD stable.",
+  "updated": "2026-07-29T11:21:28Z"
 }
