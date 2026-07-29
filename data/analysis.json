@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The Fed rates decision is pending and will likely influence the USD's direction",
+  "usd_reason": "The Fed rates decision is pending and will likely influence the dollar's direction",
   "gold_bias": "Bullish",
   "gold_reason": "Gold climbs as pause in West Asia crisis curbs inflation risk",
   "indices_bias": "Bullish",
   "indices_reason": "Oil prices tumble and Middle East tensions ease, which is positive for stocks",
-  "lead_story": "The Fed rates decision is the biggest macro driver right now, with the market waiting to see if the Fed will cut rates as Trump has called for. The decision will have a significant impact on the USD, gold, and indices. Oil prices have also been volatile, but have cooled recently due to easing tensions in the Middle East.",
-  "updated": "2026-07-29T16:17:33Z"
+  "lead_story": "The Fed rates decision is the biggest macro driver right now, with oil prices and Middle East tensions also playing a role. The Fed's decision will likely influence the direction of the dollar and stocks. A pause in the West Asia crisis is also curbing inflation risk and supporting gold prices.",
+  "updated": "2026-07-29T19:07:25Z"
 }
