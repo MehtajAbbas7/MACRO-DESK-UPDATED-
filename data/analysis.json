@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The upcoming Fed rates decision is causing uncertainty and keeping the USD stable",
+  "usd_reason": "The upcoming Fed rates decision has put the USD in a wait-and-see mode",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices are rising due to easing Middle East tensions and reduced inflation risk",
+  "gold_reason": "Easing Middle East tensions have reduced inflation risk and boosted gold prices",
   "indices_bias": "Bullish",
-  "indices_reason": "Easing tensions and lower oil prices are boosting investor sentiment and driving indices higher",
-  "lead_story": "The Fed's upcoming rates decision is the biggest macro driver right now, with investors watching for signs of a pause in rate hikes. The decision will be influenced by easing Middle East tensions and falling oil prices. A rate hike pause could boost stocks and gold, while keeping the USD stable.",
-  "updated": "2026-07-29T11:21:28Z"
+  "indices_reason": "Lower oil prices and easing geopolitical tensions are supporting stock market gains",
+  "lead_story": "The Federal Reserve's upcoming interest rate decision is the biggest macro driver right now, with markets watching for signs of a pause in rate hikes. The decision will be influenced by easing inflation pressures, including a sharp drop in oil prices. The Fed's communication strategy under new Chair Kevin Warsh is also being closely watched for clues on future policy direction",
+  "updated": "2026-07-29T13:59:33Z"
 }
