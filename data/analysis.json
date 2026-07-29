@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "Middle East tensions easing reduces safe-haven demand for the dollar",
-  "gold_bias": "Bullish",
-  "gold_reason": "Gold climbs as pause in West Asia crisis curbs inflation risk",
+  "usd_reason": "The easing of Middle East tensions reduces inflation risk and supports the US dollar",
+  "gold_bias": "Bearish",
+  "gold_reason": "The pause in West Asia crisis curbs inflation risk, reducing the appeal of gold as a safe-haven asset",
   "indices_bias": "Bullish",
-  "indices_reason": "Treasury yields tumble as Middle East tensions ease",
-  "lead_story": "The easing of Middle East tensions has led to a decrease in oil prices and Treasury yields, which in turn has boosted gold and stock market performance. The Fed is also in focus with Kevin Warsh's expected comments on interest rates. Overall, the reduction in geopolitical risk is driving the current macro landscape.",
-  "updated": "2026-07-29T02:09:20Z"
+  "indices_reason": "The easing of Middle East tensions and potential for lower interest rates supports stock market growth",
+  "lead_story": "The easing of Middle East tensions has reduced inflation risk and led to a decline in oil prices, which in turn has put pressure on the Fed to consider lower interest rates. This development has significant implications for the US dollar, gold, and stock markets. As a result, investors are closely watching the Fed's communication and potential policy changes.",
+  "updated": "2026-07-29T05:47:21Z"
 }
