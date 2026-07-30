@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The Fed meeting and rate decision will determine the USD's direction",
+  "usd_reason": "The Fed's decision to hold interest rates steady has not significantly impacted the US dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices are rising due to a pause in the West Asia crisis which reduces inflation risk",
-  "indices_bias": "Bearish",
-  "indices_reason": "Market uncertainty and anticipation of the Fed's rate decision are causing volatility",
-  "lead_story": "The Federal Reserve's meeting and rate decision are the biggest macro drivers right now, with markets on edge awaiting the outcome. The decision will have a significant impact on the US dollar and stock market. A rate cut or pause could boost stocks, while a hike could strengthen the dollar.",
-  "updated": "2026-07-30T16:23:20Z"
+  "gold_reason": "The uncertainty surrounding the Fed's rate decision and potential future hikes could drive investors to safe-haven assets like gold",
+  "indices_bias": "Neutral",
+  "indices_reason": "The lack of a clear direction from the Fed has left the market awaiting further cues",
+  "lead_story": "The Federal Reserve has decided to hold interest rates steady, but the divided vote and uncertainty surrounding future rate decisions are driving market volatility. The Fed's decision has significant implications for investors and consumers alike. The market is now awaiting further cues from the Fed and other economic indicators to determine the next course of action.",
+  "updated": "2026-07-30T19:18:51Z"
 }
