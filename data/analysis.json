@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Bullish",
-  "usd_reason": "The easing of Middle East tensions reduces the need for safe-haven assets, which could weaken the dollar",
-  "gold_bias": "Bearish",
-  "gold_reason": "The pause in West Asia crisis curbs inflation risk, reducing the demand for gold as a hedge",
+  "usd_bias": "Neutral",
+  "usd_reason": "The Fed rates decision is pending and will likely influence the dollar's direction",
+  "gold_bias": "Bullish",
+  "gold_reason": "Gold prices are climbing as Middle East tensions ease and inflation risk decreases",
   "indices_bias": "Bullish",
-  "indices_reason": "Lower oil prices and easing tensions in the Middle East are positive for the stock market",
-  "lead_story": "The easing of Middle East tensions is the biggest macro driver right now, with oil prices sliding 5% as Iran reportedly signals a halt to attacks if the US pause holds. This development reduces the risk of inflation and lowers the need for safe-haven assets. As a result, Treasury yields are tumbling and the stock market is expected to benefit from the reduced uncertainty.",
-  "updated": "2026-07-30T01:59:05Z"
+  "indices_reason": "Oil prices are sliding and tensions in West Asia are curbing, which is positive for the stock market",
+  "lead_story": "The Fed rates decision is the biggest macro driver right now, with investors waiting to see if the central bank will cut interest rates. The decision will be influenced by the recent easing of Middle East tensions and the resulting drop in oil prices. The Fed's decision will have a significant impact on the direction of the US dollar and the overall stock market.",
+  "updated": "2026-07-30T05:36:02Z"
 }
