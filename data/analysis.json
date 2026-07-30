@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "The Fed's decision to hold interest rates steady has not significantly impacted the US dollar",
-  "gold_bias": "Bullish",
-  "gold_reason": "The uncertainty surrounding the Fed's rate decision and potential future hikes could drive investors to safe-haven assets like gold",
+  "usd_bias": "Bullish",
+  "usd_reason": "The Fed's decision to hold interest rates steady may lead to a stronger US dollar",
+  "gold_bias": "Bearish",
+  "gold_reason": "Higher interest rates are less likely now, which could reduce demand for gold as a hedge against inflation",
   "indices_bias": "Neutral",
-  "indices_reason": "The lack of a clear direction from the Fed has left the market awaiting further cues",
-  "lead_story": "The Federal Reserve has decided to hold interest rates steady, but the divided vote and uncertainty surrounding future rate decisions are driving market volatility. The Fed's decision has significant implications for investors and consumers alike. The market is now awaiting further cues from the Fed and other economic indicators to determine the next course of action.",
-  "updated": "2026-07-30T19:18:51Z"
+  "indices_reason": "The Fed's decision to hold interest rates steady did not provide a clear direction for the stock market",
+  "lead_story": "The Federal Reserve has decided to hold interest rates steady, but the decision was not unanimous, with three members voting to hike rates. This decision has left markets on edge, awaiting the Fed's next move. The Fed's actions will be closely watched as investors try to gauge the impact on inflation and the overall economy.",
+  "updated": "2026-07-30T22:02:41Z"
 }
