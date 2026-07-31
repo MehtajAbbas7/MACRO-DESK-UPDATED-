@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "The Federal Reserve's decision to keep interest rates steady has not significantly impacted the US dollar",
+  "usd_bias": "Bearish",
+  "usd_reason": "The divided Fed's decision to hold interest rates steady may weaken the dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices are holding gains after the Federal Reserve's decision to keep interest rates steady, which is generally positive for gold",
+  "gold_reason": "Gold prices are rising due to increased uncertainty and geopolitical tensions",
   "indices_bias": "Bearish",
-  "indices_reason": "A divided Fed and concerns over inflation may lead to market uncertainty and negatively impact stock indices",
-  "lead_story": "The Federal Reserve's decision to keep interest rates steady has sparked debate and uncertainty in the market, with some arguing that the Fed needs to act on inflation, while others see it as a positive sign for the economy. The divided Fed has three members voting to hike interest rates, indicating a split in opinion. This uncertainty may lead to market volatility in the coming days.",
-  "updated": "2026-07-31T06:07:29Z"
+  "indices_reason": "The Dow dropped by 1,000 points and a divided Fed may lead to market volatility",
+  "lead_story": "The Federal Reserve's decision to hold interest rates steady has sparked uncertainty in the market, with a divided Fed and rising geopolitical tensions in the Middle East. This has led to a sell-off in Treasury bonds and a rise in gold prices. The outcome of the Fed's decision will be closely watched by investors and may lead to further market volatility.",
+  "updated": "2026-07-31T11:26:48Z"
 }
