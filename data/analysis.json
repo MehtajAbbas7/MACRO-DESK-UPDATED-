@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
-  "usd_reason": "The divided Fed's decision to hold interest rates steady may weaken the dollar",
+  "usd_reason": "The divided Fed's decision to hold interest rates steady may lead to a decrease in the value of the US dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices are rising due to increased uncertainty and geopolitical tensions",
+  "gold_reason": "Gold prices are holding modest gains after the Federal Reserve kept interest rates steady, indicating a potential safe-haven demand",
   "indices_bias": "Bearish",
-  "indices_reason": "The Dow dropped by 1,000 points and a divided Fed may lead to market volatility",
-  "lead_story": "The Federal Reserve's decision to hold interest rates steady has sparked uncertainty in the market, with a divided Fed and rising geopolitical tensions in the Middle East. This has led to a sell-off in Treasury bonds and a rise in gold prices. The outcome of the Fed's decision will be closely watched by investors and may lead to further market volatility.",
-  "updated": "2026-07-31T11:26:48Z"
+  "indices_reason": "The divided Fed and uncertainty over interest rates may lead to market volatility and a decline in stock indices",
+  "lead_story": "The Federal Reserve's decision to hold interest rates steady has sparked uncertainty in the markets, with a divided Fed and rising tensions in the Middle East contributing to the volatility. The Fed's inaction on interest rates has raised questions about its credibility and ability to address inflation. As a result, investors are bracing for potential market fluctuations and seeking safe-haven assets like gold.",
+  "updated": "2026-07-31T13:53:35Z"
 }
