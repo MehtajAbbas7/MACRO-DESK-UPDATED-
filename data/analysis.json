@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "The divided Fed holding interest rates steady has not significantly impacted the US dollar",
+  "usd_bias": "Bullish",
+  "usd_reason": "The Fed's consideration of rate hikes to combat inflation suggests a strong dollar",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices are holding modest gains after the Federal Reserve kept interest rates steady",
+  "gold_reason": "Gold prices held modest gains after the Federal Reserve kept rates steady, indicating a safe-haven appeal",
   "indices_bias": "Bearish",
-  "indices_reason": "The Dow has dropped significantly in the past and the current divided Fed decision may lead to further market volatility",
-  "lead_story": "The Federal Reserve has decided to hold interest rates steady despite inflation concerns, leading to a divided response from Fed members and market analysts. This decision has sparked uncertainty and tension in the market, with some experts warning of potential inflation risks. The Fed's move is being closely watched by investors and economists, who are waiting to see how the decision will impact the economy and financial markets.",
-  "updated": "2026-08-01T10:37:02Z"
+  "indices_reason": "A divided Fed and concerns over inflation may lead to market volatility and decreased investor confidence",
+  "lead_story": "The Federal Reserve's decision to hold interest rates steady has sparked a divided reaction, with some officials pushing for hikes to combat inflation. This division has led to market uncertainty and volatility. The Fed's next move will be closely watched by investors and may have significant implications for the economy.",
+  "updated": "2026-08-01T13:08:28Z"
 }
