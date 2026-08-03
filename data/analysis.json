@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
-  "usd_reason": "The dollar had its worst week in over 3 months amid doubts about the Fed's ability to act on inflation",
+  "usd_reason": "The dollar had its worst week in over 3 months amid doubts about the Fed's ability to tackle inflation",
   "gold_bias": "Bullish",
   "gold_reason": "Gold held modest gains after the Federal Reserve kept interest rates steady",
   "indices_bias": "Neutral",
-  "indices_reason": "The Fed's decision to hold interest rates steady has left investors uncertain about the direction of the market",
-  "lead_story": "The Federal Reserve's decision to hold interest rates steady has sparked doubts about its ability to act on inflation, leading to a divided response from investors and a decline in the dollar. The Fed's inaction has also led to questions about Chairman Warsh's credibility. As a result, investors are now awaiting fresh economic data to determine their next move.",
-  "updated": "2026-08-03T06:17:04Z"
+  "indices_reason": "Treasury yields inched lower as investors await fresh economic data",
+  "lead_story": "The Federal Reserve's decision to hold interest rates steady has sparked doubts about its ability to tackle inflation, with some officials calling for action now. The decision has also led to a sell-off in Treasury yields and a decline in the dollar. As a result, investors are now awaiting fresh economic data to gauge the Fed's next move.",
+  "updated": "2026-08-03T12:18:07Z"
 }
