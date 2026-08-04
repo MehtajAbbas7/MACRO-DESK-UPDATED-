@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
-  "usd_reason": "The dollar had its worst week in over 3 months amid Fed doubts",
+  "usd_reason": "The dollar logged its worst week in over 3 months amid Fed doubts",
   "gold_bias": "Bullish",
-  "gold_reason": "Lower Treasury yields and uncertainty around the Fed's actions could boost gold prices",
+  "gold_reason": "U.S. Treasury yields fall as oil prices plunge on Iran de-escalation hopes",
   "indices_bias": "Neutral",
-  "indices_reason": "The market is awaiting fresh economic data to determine the next move",
-  "lead_story": "The Federal Reserve is facing pressure to act on inflation, but with indicators showing it's at its lowest in years, the central bank's next move is uncertain. The divided Fed held interest rates steady, causing a Treasury sell-off. As a result, investors are eagerly awaiting fresh economic data to determine the next move.",
-  "updated": "2026-08-04T11:20:36Z"
+  "indices_reason": "Treasury yields inch lower as investors await fresh economic data",
+  "lead_story": "The US Federal Reserve is facing pressure to act on inflation, but recent indicators show it's at its lowest in years, leading to divided opinions among Fed officials on whether to hike interest rates. This has caused uncertainty in the market, with Treasury yields inching lower as investors await fresh economic data. The Fed's decision will have significant implications for the US economy and financial markets.",
+  "updated": "2026-08-04T13:59:53Z"
 }
