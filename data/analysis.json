@@ -1,4 +1,10 @@
 {
-  "error": "Expecting ',' delimiter: line 8 column 492 (char 807)",
-  "updated": "2026-08-04T22:07:42Z"
+  "usd_bias": "Bearish",
+  "usd_reason": "The dollar logged its worst week in over 3 months amid Fed doubts",
+  "gold_bias": "Bullish",
+  "gold_reason": "Lower Treasury yields make gold more attractive",
+  "indices_bias": "Neutral",
+  "indices_reason": "Investors are awaiting fresh economic data to make a move",
+  "lead_story": "The US dollar has fallen after a weak week, Treasury yields are down, and the market is waiting for the Fed to act on inflation, which is currently at its lowest in years, with some officials calling for rate hikes to combat it, but the overall economic outlook is uncertain.",
+  "updated": "2026-08-05T02:03:15Z"
 }
