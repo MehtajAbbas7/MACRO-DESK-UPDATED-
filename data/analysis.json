@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
-  "usd_reason": "The dollar had its worst week in over 3 months amid Fed doubts",
+  "usd_reason": "The dollar logged its worst week in over 3 months amid Fed doubts",
   "gold_bias": "Bullish",
-  "gold_reason": "Lower US Treasury yields and de-escalation hopes in Iran could boost gold prices",
-  "indices_bias": "Bullish",
-  "indices_reason": "Oil prices plunged on Iran de-escalation hopes, which could boost stock markets",
-  "lead_story": "The Fed is under pressure to act on inflation, but recent indicators show it's at its lowest in years, with some Fed officials content with current rates, while others are prepared to act, causing uncertainty in the market. The US Treasury yields have fallen, and the dollar has logged its worst week in over 3 months. The recent developments in Iran and the joint action on the yen by Tokyo and Washington are also influencing the market.",
-  "updated": "2026-08-07T02:26:30Z"
+  "gold_reason": "Lower interest rates and geopolitical uncertainty typically boost gold prices",
+  "indices_bias": "Neutral",
+  "indices_reason": "The market is waiting for further guidance from the Fed on interest rates",
+  "lead_story": "The Federal Reserve is considering raising interest rates to address inflation, with Governor Cook stating she's prepared to act, but Philadelphia Fed President Paulson is content with rates at current levels. The US Treasury yields have fallen due to de-escalation hopes in the Iran conflict. The Fed's decision on interest rates will be a key driver of the market in the coming weeks.",
+  "updated": "2026-08-07T04:51:12Z"
 }
