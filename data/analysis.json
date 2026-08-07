@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
-  "usd_reason": "The dollar had its worst week in over 3 months amid Fed doubts",
-  "gold_bias": "Bullish",
-  "gold_reason": "Lower interest rates and inflation concerns typically support gold prices",
-  "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for the Fed's next move on interest rates",
-  "lead_story": "The Fed is under pressure to act on inflation, but recent indicators show it's at its lowest in years, causing doubts about the need for a rate hike. This uncertainty is affecting the US dollar and financial markets. The Fed's next move will be closely watched by investors and could have significant implications for the economy.",
-  "updated": "2026-08-07T12:53:01Z"
+  "usd_reason": "The dollar logged its worst week in over 3 months amid Fed doubts",
+  "gold_bias": "Neutral",
+  "gold_reason": "There is no significant news driving gold prices",
+  "indices_bias": "Bullish",
+  "indices_reason": "Oil prices plunged on Iran de-escalation hopes, which could boost the stock market",
+  "lead_story": "The Fed is under pressure to act on inflation, but recent indicators show it's at its lowest in years, causing doubts about rate hikes. This uncertainty is affecting the dollar and the overall market. The Fed's next move will be a key driver of the economy in the coming weeks.",
+  "updated": "2026-08-07T15:51:47Z"
 }
