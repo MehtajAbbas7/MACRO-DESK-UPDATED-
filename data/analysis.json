@@ -2,9 +2,9 @@
   "usd_bias": "Bearish",
   "usd_reason": "The dollar logged its worst week in over 3 months amid Fed doubts",
   "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold prices",
+  "gold_reason": "There is no clear indication of a significant change in gold prices",
   "indices_bias": "Bullish",
-  "indices_reason": "Oil prices plunged on Iran de-escalation hopes, which could boost the stock market",
-  "lead_story": "The Fed is under pressure to act on inflation, but recent indicators show it's at its lowest in years, causing doubts about rate hikes. This uncertainty is affecting the dollar and the overall market. The Fed's next move will be a key driver of the economy in the coming weeks.",
-  "updated": "2026-08-07T15:51:47Z"
+  "indices_reason": "U.S. Treasury yields fall as oil prices plunge on Iran de-escalation hopes",
+  "lead_story": "The Fed is under pressure to act on inflation, but indicators show it's at its lowest in years, with Fed Governor Cook saying she's prepared to act on rate hikes, while Philadelphia Fed President Paulson is content with rates at current levels, and the dollar has logged its worst week in over 3 months amid these Fed doubts, causing market uncertainty and volatility, and the recent de-escalation in Iran has led to a plunge in oil prices, which is also affecting the market",
+  "updated": "2026-08-07T18:48:51Z"
 }
