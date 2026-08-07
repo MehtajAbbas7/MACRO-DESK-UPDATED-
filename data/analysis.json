@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
-  "usd_reason": "The dollar logged its worst week in over 3 months amid Fed doubts",
-  "gold_bias": "Neutral",
-  "gold_reason": "There is no clear indication of a significant change in gold prices",
-  "indices_bias": "Bullish",
-  "indices_reason": "U.S. Treasury yields fall as oil prices plunge on Iran de-escalation hopes",
-  "lead_story": "The Fed is under pressure to act on inflation, but indicators show it's at its lowest in years, with Fed Governor Cook saying she's prepared to act on rate hikes, while Philadelphia Fed President Paulson is content with rates at current levels, and the dollar has logged its worst week in over 3 months amid these Fed doubts, causing market uncertainty and volatility, and the recent de-escalation in Iran has led to a plunge in oil prices, which is also affecting the market",
-  "updated": "2026-08-07T18:48:51Z"
+  "usd_reason": "The dollar had its worst week in over 3 months amid Fed doubts",
+  "gold_bias": "Bullish",
+  "gold_reason": "Lower US Treasury yields and plunging oil prices could boost gold prices",
+  "indices_bias": "Neutral",
+  "indices_reason": "The market is waiting for more clarity on interest rates and inflation",
+  "lead_story": "The US dollar had a weak week due to doubts about the Fed's ability to raise interest rates, oil prices are plunging on hopes of de-escalation with Iran, and the US Treasury yields are falling, all of which are impacting the market. The Fed is considering rate hikes to address inflation. The joint action on the yen by Tokyo and Washington is also being closely watched.",
+  "updated": "2026-08-07T21:34:17Z"
 }
