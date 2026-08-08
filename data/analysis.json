@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bearish",
   "usd_reason": "The dollar had its worst week in over 3 months amid Fed doubts",
-  "gold_bias": "Neutral",
-  "gold_reason": "There is no significant news driving gold prices",
-  "indices_bias": "Bullish",
-  "indices_reason": "Oil prices plunged on Iran de-escalation hopes, which could boost the stock market",
-  "lead_story": "The Fed is considering a rate hike to address inflation, with Governor Cook saying she's prepared to act, but Philadelphia Fed President Paulson is content with rates at the current level. The US dollar had a bad week amid these Fed doubts. The US economy is also being influenced by geopolitical events, including the recent de-escalation in Iran.",
-  "updated": "2026-08-08T01:13:59Z"
+  "gold_bias": "Bullish",
+  "gold_reason": "Lower US Treasury yields and plunging oil prices could boost gold prices",
+  "indices_bias": "Neutral",
+  "indices_reason": "The market is waiting for further direction on interest rates and inflation",
+  "lead_story": "The US Federal Reserve's stance on interest rates is the biggest macro driver right now, with some officials indicating a willingness to act on inflation, while others are content with current rates. The Fed's decisions will have significant implications for the US economy and financial markets. The recent decline in US Treasury yields and oil prices has added to the uncertainty, making it a critical time for investors to watch the Fed's next moves.",
+  "updated": "2026-08-08T04:07:59Z"
 }
