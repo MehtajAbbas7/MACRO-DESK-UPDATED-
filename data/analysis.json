@@ -2,9 +2,9 @@
   "usd_bias": "Bearish",
   "usd_reason": "The dollar had its worst week in over 3 months amid Fed doubts",
   "gold_bias": "Bullish",
-  "gold_reason": "Lower US Treasury yields and de-escalation hopes in Iran could boost gold prices",
+  "gold_reason": "Lower US Treasury yields and oil prices could increase demand for gold",
   "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for more information on interest rates and inflation",
-  "lead_story": "The US dollar had a bad week due to doubts about the Fed's ability to raise interest rates, oil prices are falling due to hopes of de-escalation in Iran, and the US Treasury yields are also falling, all of which are affecting the market, the Fed is considering raising interest rates to address inflation, and this is the biggest macro driver right now, it will likely impact the economy and the financial markets in the coming weeks",
-  "updated": "2026-08-08T12:37:23Z"
+  "indices_reason": "The market is waiting for further guidance on interest rates from the Fed",
+  "lead_story": "The US dollar had a weak week due to doubts about the Fed's ability to raise interest rates, US Treasury yields fell as oil prices dropped on hopes of de-escalation in Iran, and the Fed is considering its next move on interest rates to address inflation.",
+  "updated": "2026-08-08T15:24:04Z"
 }
