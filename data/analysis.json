@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The US dollar is stable due to mixed signals from Fed officials on rate hikes",
+  "usd_reason": "The US dollar is stable due to mixed signals from Fed officials on interest rates",
   "gold_bias": "Bullish",
-  "gold_reason": "Gold prices may rise due to ongoing geopolitical tensions and potential inflation",
-  "indices_bias": "Bullish",
-  "indices_reason": "Stock market indices may increase due to de-escalation hopes in the Iran conflict",
-  "lead_story": "The US and Japan have taken joint action to prop up the yen, the US used most of its long-range precision missiles during the Iran war, and Fed officials are considering rate hikes to address inflation, these factors are driving the current macro environment and influencing market trends, with investors watching for signs of economic stability and potential risks",
-  "updated": "2026-08-10T12:57:04Z"
+  "gold_reason": "Gold prices may rise as a safe-haven asset due to ongoing global uncertainties",
+  "indices_bias": "Neutral",
+  "indices_reason": "Stock market indices are steady ahead of new economic data and potential rate hikes",
+  "lead_story": "The recent de-escalation in Iran has led to a plunge in oil prices, which in turn has caused US Treasury yields to fall. The US Federal Reserve is still considering rate hikes to address inflation. The joint US and Japan action to prop up the yen has also added to the current economic stability.",
+  "updated": "2026-08-10T15:55:56Z"
 }
