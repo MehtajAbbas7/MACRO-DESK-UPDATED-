@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Bullish",
-  "usd_reason": "The US Treasury yields fell as oil prices plunged on Iran de-escalation hopes, which could lead to a stronger dollar",
-  "gold_bias": "Bearish",
-  "gold_reason": "Lower oil prices and decreased geopolitical tensions could reduce demand for safe-haven assets like gold",
+  "usd_bias": "Neutral",
+  "usd_reason": "The US dollar is stable due to mixed signals from Fed officials on rate hikes",
+  "gold_bias": "Bullish",
+  "gold_reason": "Gold prices may rise due to ongoing geopolitical tensions and potential inflation",
   "indices_bias": "Bullish",
-  "indices_reason": "The plunge in oil prices and hopes for de-escalation in Iran could boost stock markets",
-  "lead_story": "The recent de-escalation in Iran has led to a plunge in oil prices, which in turn has caused US Treasury yields to fall. This development has the potential to boost stock markets and strengthen the US dollar. As a result, investors are closely watching the situation to see if the de-escalation will be sustained and how it will impact the global economy.",
-  "updated": "2026-08-10T10:12:39Z"
+  "indices_reason": "Stock market indices may increase due to de-escalation hopes in the Iran conflict",
+  "lead_story": "The US and Japan have taken joint action to prop up the yen, the US used most of its long-range precision missiles during the Iran war, and Fed officials are considering rate hikes to address inflation, these factors are driving the current macro environment and influencing market trends, with investors watching for signs of economic stability and potential risks",
+  "updated": "2026-08-10T12:57:04Z"
 }
