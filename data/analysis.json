@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The US dollar may strengthen due to the Fed's potential rate hike to address inflation",
-  "gold_bias": "Neutral",
-  "gold_reason": "Gold prices are stable as oil prices plunge on Iran de-escalation hopes",
+  "usd_reason": "The US dollar may strengthen due to hopes of de-escalation in Iran and subsequent decrease in oil prices",
+  "gold_bias": "Bearish",
+  "gold_reason": "Gold prices may decline as oil prices plunge on Iran de-escalation hopes, reducing demand for safe-haven assets",
   "indices_bias": "Bullish",
-  "indices_reason": "US Treasury yields fall as oil prices plunge, which could boost stock market performance",
-  "lead_story": "The US Federal Reserve is considering a rate hike to address inflation, which could impact the economy and financial markets. The decision to raise rates will depend on inflation data and economic indicators. The potential rate hike is currently the biggest macro driver, influencing currency and stock market trends.",
-  "updated": "2026-08-11T04:15:37Z"
+  "indices_reason": "The stock market may rise as US Treasury yields fall and oil prices decrease, improving investor sentiment",
+  "lead_story": "The recent de-escalation in Iran has led to a decrease in oil prices, which in turn has caused US Treasury yields to fall. This development has improved investor sentiment and may lead to a rise in the stock market. As a result, the US dollar may strengthen and gold prices may decline.",
+  "updated": "2026-08-11T06:58:37Z"
 }
