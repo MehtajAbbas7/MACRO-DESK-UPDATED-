@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "The US dollar is stable due to mixed signals from Fed officials on interest rates",
-  "gold_bias": "Bullish",
-  "gold_reason": "Gold prices may rise due to ongoing global uncertainty and potential inflation",
-  "indices_bias": "Neutral",
-  "indices_reason": "Stock market indices are steady as investors weigh the impact of interest rates and global events",
-  "lead_story": "The US and Japan have taken joint action to prop up the yen, the US used most of its long-range precision missiles during the Iran war, and Fed officials are signaling potential rate hikes to address inflation, all of which are influencing the current macroeconomic landscape and creating uncertainty in the markets, the de-escalation hopes in Iran are also affecting oil prices and treasury yields",
-  "updated": "2026-08-11T01:18:34Z"
+  "usd_bias": "Bullish",
+  "usd_reason": "The US dollar may strengthen due to the Fed's potential rate hike to address inflation",
+  "gold_bias": "Neutral",
+  "gold_reason": "Gold prices are stable as oil prices plunge on Iran de-escalation hopes",
+  "indices_bias": "Bullish",
+  "indices_reason": "US Treasury yields fall as oil prices plunge, which could boost stock market performance",
+  "lead_story": "The US Federal Reserve is considering a rate hike to address inflation, which could impact the economy and financial markets. The decision to raise rates will depend on inflation data and economic indicators. The potential rate hike is currently the biggest macro driver, influencing currency and stock market trends.",
+  "updated": "2026-08-11T04:15:37Z"
 }
