@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The potential for de-escalation in Iran and falling oil prices could reduce inflationary pressures and support the US dollar",
+  "usd_reason": "The Fed is expected to address inflation with a potential rate hike, which could strengthen the dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Lower oil prices and reduced geopolitical tensions could decrease demand for safe-haven assets like gold",
-  "indices_bias": "Bullish",
-  "indices_reason": "Hopes for de-escalation in Iran and falling oil prices could boost investor sentiment and support stock market gains",
-  "lead_story": "The US and Iran have seen a de-escalation in tensions, with oil prices plunging as a result. This has led to a decrease in US Treasury yields, which could support the US dollar and boost investor sentiment. The potential for reduced inflationary pressures could also lead to a more favorable economic environment.",
-  "updated": "2026-08-12T15:54:46Z"
+  "gold_reason": "Higher interest rates could reduce demand for gold as an inflation hedge",
+  "indices_bias": "Neutral",
+  "indices_reason": "The market is waiting for the inflation report and the Fed's decision on interest rates, causing uncertainty",
+  "lead_story": "The upcoming inflation report is a major focus for the market, as it will influence the Fed's decision on interest rates. A high inflation reading could lead to a rate hike, which would impact the economy and financial markets. The Fed's decision will be closely watched by investors and could have significant effects on the dollar, gold, and stock indices.",
+  "updated": "2026-08-12T18:56:04Z"
 }
