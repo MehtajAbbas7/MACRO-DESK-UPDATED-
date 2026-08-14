@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The Fed is prepared to act on rate hikes to address inflation, which could strengthen the dollar",
+  "usd_reason": "The Fed is prepared to act on rate hikes to address inflation, which typically strengthens the US dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Higher interest rates could reduce demand for gold as an inflation hedge",
+  "gold_reason": "Higher interest rates expected from the Fed tend to decrease the value of gold",
   "indices_bias": "Neutral",
-  "indices_reason": "The outcome of the inflation report and the Fed's decision on rate hikes will determine the direction of the markets",
-  "lead_story": "The July CPI inflation report is expected to be a big deal for the Fed, with Fed Governor Cook saying she's prepared to act on rate hikes to address inflation, the Fed's decision will have a significant impact on the markets, and higher interest rates could affect the economy",
-  "updated": "2026-08-14T09:55:34Z"
+  "indices_reason": "The current economic situation is uncertain and the Fed's actions will have a significant impact on the market",
+  "lead_story": "The July CPI inflation report is a major focus for the Fed, with a potential rate hike expected to combat inflation, the Fed Governor has stated she is prepared to act, and the Philadelphia Fed President is keeping an open mind on future rate changes, all of which will have significant implications for the economy",
+  "updated": "2026-08-14T12:55:07Z"
 }
