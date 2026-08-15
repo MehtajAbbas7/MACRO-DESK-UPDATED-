@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The Fed is likely to continue raising interest rates to address inflation, which will strengthen the US dollar",
+  "usd_reason": "The Fed is expected to continue raising interest rates to address inflation, which typically strengthens the US dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Higher interest rates will increase the opportunity cost of holding gold, leading to a decrease in its value",
+  "gold_reason": "Rising interest rates tend to decrease the appeal of gold as an investment",
   "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for the inflation report to determine the next move, keeping indices stable for now",
-  "lead_story": "The upcoming inflation report is the biggest macro driver right now, with the Fed expected to raise interest rates if inflation is high. This will have a significant impact on the US dollar and the overall economy. The report will be closely watched by investors and policymakers alike.",
-  "updated": "2026-08-15T09:21:03Z"
+  "indices_reason": "The market is waiting for the inflation report to determine the next move for stock indices",
+  "lead_story": "The upcoming inflation report is a major driver of market sentiment right now, with the Fed expected to raise interest rates to combat inflation. The report will be closely watched for signs of whether inflation is slowing down or still rising. This will have a significant impact on the direction of the US dollar, gold, and stock indices.",
+  "updated": "2026-08-15T12:28:12Z"
 }
