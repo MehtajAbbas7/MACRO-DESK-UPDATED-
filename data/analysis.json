@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "The recent financial headlines do not indicate a clear direction for the US dollar",
-  "gold_bias": "Bullish",
-  "gold_reason": "Inflation concerns and uncertainty may drive investors to safe-haven assets like gold",
+  "usd_reason": "There is no clear indication of a significant shift in USD value from the provided headlines",
+  "gold_bias": "Neutral",
+  "gold_reason": "No relevant gold market news was found in the provided headlines",
   "indices_bias": "Neutral",
-  "indices_reason": "The upcoming inflation report and Fed actions may influence market direction, but it's unclear how",
-  "lead_story": "The July CPI inflation report is expected to be a significant factor in the Fed's decision-making, and its release will be closely watched by investors. The inflation fight is complicated by the costly buildout of AI and other factors. The Fed's actions will have a major impact on the overall economy and financial markets.",
-  "updated": "2026-08-16T15:16:06Z"
+  "indices_reason": "The headlines do not suggest a strong trend in the stock market indices",
+  "lead_story": "The upcoming July CPI inflation report is expected to be a significant event for the Fed's inflation fight, AI's costly buildout is complicating the Fed's efforts to control inflation, and the report's outcome may influence the central bank's future decisions.",
+  "updated": "2026-08-16T18:21:01Z"
 }
