@@ -1,10 +1,10 @@
 {
   "usd_bias": "Bullish",
-  "usd_reason": "The Fed is prepared to act on rate hikes to address inflation, which typically strengthens the US dollar",
+  "usd_reason": "The Fed is considering a rate hike to address inflation, which could strengthen the dollar",
   "gold_bias": "Bearish",
-  "gold_reason": "Higher interest rates make gold less attractive as an investment",
+  "gold_reason": "Higher interest rates could reduce demand for gold as an inflation hedge",
   "indices_bias": "Neutral",
   "indices_reason": "The market is waiting for the inflation report to determine the next move",
-  "lead_story": "The upcoming inflation report is a major focus for the Fed and will likely determine the next interest rate decision, with Fed Governor Cook stating she is prepared to act on a rate hike to address inflation, the report will have significant implications for the US economy and markets, and its impact will be closely watched by investors and policymakers",
-  "updated": "2026-08-16T09:21:55Z"
+  "lead_story": "The upcoming inflation report is a major driver of market sentiment, with the Fed considering a rate hike to address inflation, and the report's outcome will have significant implications for the economy, the Fed's decision-making process is being closely watched by investors and analysts, and the report's release will likely lead to increased market volatility",
+  "updated": "2026-08-16T12:29:24Z"
 }
