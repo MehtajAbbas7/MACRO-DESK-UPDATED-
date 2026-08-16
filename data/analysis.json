@@ -1,10 +1,10 @@
 {
   "usd_bias": "Neutral",
-  "usd_reason": "There is no clear indication of a significant shift in USD value from the provided headlines",
+  "usd_reason": "There is no significant news driving the US dollar in these headlines",
   "gold_bias": "Neutral",
-  "gold_reason": "No relevant gold market news was found in the provided headlines",
-  "indices_bias": "Neutral",
-  "indices_reason": "The headlines do not suggest a strong trend in the stock market indices",
-  "lead_story": "The upcoming July CPI inflation report is expected to be a significant event for the Fed's inflation fight, AI's costly buildout is complicating the Fed's efforts to control inflation, and the report's outcome may influence the central bank's future decisions.",
-  "updated": "2026-08-16T18:21:01Z"
+  "gold_reason": "There is no significant news driving gold prices in these headlines",
+  "indices_bias": "Bullish",
+  "indices_reason": "Workday's stock surge and Apple's new facility are positive signs for the market",
+  "lead_story": "The July CPI inflation report is a key driver of the market right now, as it will influence the Fed's inflation fight and interest rate decisions. The report should be a big deal for the Fed and will be closely watched. The Fed's actions will have a significant impact on the overall economy and markets.",
+  "updated": "2026-08-16T21:15:20Z"
 }
