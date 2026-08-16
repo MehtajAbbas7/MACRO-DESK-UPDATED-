@@ -1,10 +1,10 @@
 {
-  "usd_bias": "Bullish",
-  "usd_reason": "The Fed is considering a rate hike to address inflation, which could strengthen the dollar",
-  "gold_bias": "Bearish",
-  "gold_reason": "Higher interest rates could reduce demand for gold as an inflation hedge",
+  "usd_bias": "Neutral",
+  "usd_reason": "The recent financial headlines do not indicate a clear direction for the US dollar",
+  "gold_bias": "Bullish",
+  "gold_reason": "Inflation concerns and uncertainty may drive investors to safe-haven assets like gold",
   "indices_bias": "Neutral",
-  "indices_reason": "The market is waiting for the inflation report to determine the next move",
-  "lead_story": "The upcoming inflation report is a major driver of market sentiment, with the Fed considering a rate hike to address inflation, and the report's outcome will have significant implications for the economy, the Fed's decision-making process is being closely watched by investors and analysts, and the report's release will likely lead to increased market volatility",
-  "updated": "2026-08-16T12:29:24Z"
+  "indices_reason": "The upcoming inflation report and Fed actions may influence market direction, but it's unclear how",
+  "lead_story": "The July CPI inflation report is expected to be a significant factor in the Fed's decision-making, and its release will be closely watched by investors. The inflation fight is complicated by the costly buildout of AI and other factors. The Fed's actions will have a major impact on the overall economy and financial markets.",
+  "updated": "2026-08-16T15:16:06Z"
 }
