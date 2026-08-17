@@ -1,10 +1,4 @@
 {
-  "usd_bias": "Neutral",
-  "usd_reason": "There is no significant news driving the US dollar's value",
-  "gold_bias": "Neutral",
-  "gold_reason": "No major economic news is impacting gold prices",
-  "indices_bias": "Bullish",
-  "indices_reason": "The recent stock surge of companies like Workday is contributing to a positive market sentiment",
-  "lead_story": "The upcoming July CPI inflation report is a major macro driver as it will influence the Fed's inflation fight and potential interest rate decisions. The report's outcome will be closely watched by investors and policymakers. A higher-than-expected inflation reading could lead to further interest rate hikes.",
-  "updated": "2026-08-17T06:43:29Z"
+  "error": "HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n",
+  "updated": "2026-08-17T09:35:45Z"
 }
